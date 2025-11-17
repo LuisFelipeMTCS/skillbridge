@@ -35,3 +35,5 @@ Thumbs.db
 # Outros
 *.pdf
 Downloads/
+# Firebase credentials
+firebase-credentials.json

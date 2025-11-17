@@ -5,13 +5,13 @@ import sys
 from datetime import datetime
 
 # ✅ ADICIONAR O DIRETÓRIO SRC AO PATH
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'controller'))
 
 # ✅ AGORA OS IMPORTS FUNCIONAM
 from gpt_recommender import montar_input, recommender
 from save_pdf import salvar_pdf_organizado
 
-app = Flask(__name__, template_folder='../src')
+app = Flask(__name__, template_folder='../controller')
 
 # Configurações
 DATA_FOLDER = os.path.join(os.path.dirname(__file__), '..', 'data')
