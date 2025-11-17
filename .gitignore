@@ -1,0 +1,37 @@
+﻿# Ambiente virtual
+venv/
+env/
+.venv/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+
+# Variáveis de ambiente - NUNCA COMMITAR!
+.env
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dados sensíveis
+data/cursos_alura.json
+*.pkl
+*.joblib
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Outros
+*.pdf
+Downloads/
