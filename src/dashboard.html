@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Carreira Alura - IA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .checkbox-item label {
+            margin: 0;
+            font-weight: 400;
+            font-size: 0.95em;
+        }
+
+        .skills-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .skills-category h3 {
+            color: #667eea;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .message.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            display: block;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            display: block;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Plano de Carreira Personalizado</h1>
+        <p class="subtitle">Recomendações de cursos Alura com IA</p>
+
+        <form id="careerForm">
+            <!-- Objetivo Principal -->
+            <div class="form-group">
+                <label for="objetivo_principal">Qual é seu objetivo principal? *</label>
+                <select id="objetivo_principal" name="objetivo_principal" required>
+                    <option value="">Selecione...</option>
+                    <option value="Atualizar Carreira">Atualizar minha carreira atual</option>
+                    <option value="Realocar Carreira">Mudar de área (realocação)</option>
+                </select>
+            </div>
+
+            <!-- Seção: Atualizar Carreira -->
+            <div id="atualizarSection" class="section">
+                <div class="info-box">
+                    <strong>📈 Atualização de Carreira</strong>
+                    <p>Vamos identificar as melhores oportunidades na sua área atual</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="area_especializacao_desejada">Área de especialização desejada:</label>
+                    <input type="text" id="area_especializacao_desejada" 
+                           placeholder="Ex: Machine Learning, DevOps, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="objetivo_curto_prazo">Objetivo de curto prazo:</label>
+                    <input type="text" id="objetivo_curto_prazo" 
+                           placeholder="Ex: Promoção, nova certificação, etc.">
+                </div>
+            </div>
+
+            <!-- Seção: Realocar Carreira -->
+            <div id="realocarSection" class="section">
+                <div class="info-box">
+                    <strong>🔄 Realocação de Carreira</strong>
+                    <p>Vamos planejar sua transição para uma nova área</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="nova_area_interesse">Nova área de interesse: *</label>
+                    <input type="text" id="nova_area_interesse" 
+                           placeholder="Ex: Desenvolvimento Web, Data Science, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label>Motivação para realocação:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motiv1" value="Melhor remuneração">
+                            <label for="motiv1">Melhor remuneração</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motiv2" value="Mais oportunidades">
+                            <label for="motiv2">Mais oportunidades</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motiv3" value="Interesse pessoal">
+                            <label for="motiv3">Interesse pessoal</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motiv4" value="Área menos saturada">
+                            <label for="motiv4">Área menos saturada</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Habilidades transferíveis (soft skills):</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="soft1" value="Liderança">
+                            <label for="soft1">Liderança</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="soft2" value="Comunicação">
+                            <label for="soft2">Comunicação</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="soft3" value="Resolução de Problemas">
+                            <label for="soft3">Resolução de Problemas</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="soft4" value="Trabalho em equipe">
+                            <label for="soft4">Trabalho em equipe</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="experiencia_nao_tech_relevante">Experiência relevante (não-tech):</label>
+                    <textarea id="experiencia_nao_tech_relevante" 
+                              placeholder="Descreva experiências anteriores que possam ajudar na transição"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="faixa_salarial_desejada">Faixa salarial desejada:</label>
+                    <select id="faixa_salarial_desejada">
+                        <option value="">Selecione...</option>
+                        <option value="Até R$ 3.000">Até R$ 3.000</option>
+                        <option value="R$ 3.001 - R$ 5.000">R$ 3.001 - R$ 5.000</option>
+                        <option value="R$ 5.001 - R$ 10.000">R$ 5.001 - R$ 10.000</option>
+                        <option value="R$ 10.001 - R$ 15.000">R$ 10.001 - R$ 15.000</option>
+                        <option value="Acima de R$ 15.000">Acima de R$ 15.000</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Informações Gerais (sempre visível) -->
+            <div class="info-box" style="margin-top: 30px;">
+                <strong>👤 Informações Gerais</strong>
+            </div>
+
+            <div class="form-group">
+                <label for="profissao_atual">Profissão atual: *</label>
+                <input type="text" id="profissao_atual" required 
+                       placeholder="Ex: Desenvolvedor, QA, Analista, etc.">
+            </div>
+
+            <div class="form-group">
+                <label for="anos_experiencia">Anos de experiência: *</label>
+                <input type="number" id="anos_experiencia" min="0" max="50" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nivel_atual">Nível atual: *</label>
+                <select id="nivel_atual" required>
+                    <option value="">Selecione...</option>
+                    <option value="Júnior">Júnior (0-3 anos)</option>
+                    <option value="Pleno">Pleno (3-7 anos)</option>
+                    <option value="Sênior">Sênior (7+ anos)</option>
+                    <option value="Especialista">Especialista</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Habilidades técnicas atuais: *</label>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Selecione todas as tecnologias que você conhece</p>
+                
+                <!-- Linguagens de Programação -->
+                <div class="skills-category">
+                    <h3>💻 Linguagens de Programação</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_python" value="Python">
+                            <label for="skill_python">Python</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_javascript" value="JavaScript">
+                            <label for="skill_javascript">JavaScript</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_typescript" value="TypeScript">
+                            <label for="skill_typescript">TypeScript</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_java" value="Java">
+                            <label for="skill_java">Java</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_csharp" value="C#">
+                            <label for="skill_csharp">C#</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_php" value="PHP">
+                            <label for="skill_php">PHP</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_ruby" value="Ruby">
+                            <label for="skill_ruby">Ruby</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_go" value="Go">
+                            <label for="skill_go">Go</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_kotlin" value="Kotlin">
+                            <label for="skill_kotlin">Kotlin</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_swift" value="Swift">
+                            <label for="skill_swift">Swift</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_rust" value="Rust">
+                            <label for="skill_rust">Rust</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_cpp" value="C++">
+                            <label for="skill_cpp">C++</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skills-category">
+                    <h3>🎨 Frontend & Web</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_html" value="HTML/CSS">
+                            <label for="skill_html">HTML/CSS</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_react" value="React">
+                            <label for="skill_react">React</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_angular" value="Angular">
+                            <label for="skill_angular">Angular</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_vue" value="Vue.js">
+                            <label for="skill_vue">Vue.js</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_nextjs" value="Next.js">
+                            <label for="skill_nextjs">Next.js</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_tailwind" value="Tailwind CSS">
+                            <label for="skill_tailwind">Tailwind CSS</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_sass" value="Sass/SCSS">
+                            <label for="skill_sass">Sass/SCSS</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_jquery" value="jQuery">
+                            <label for="skill_jquery">jQuery</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Frameworks -->
+                <div class="skills-category">
+                    <h3>⚙️ Backend & Frameworks</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_nodejs" value="Node.js">
+                            <label for="skill_nodejs">Node.js</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_express" value="Express.js">
+                            <label for="skill_express">Express.js</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_django" value="Django">
+                            <label for="skill_django">Django</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_flask" value="Flask">
+                            <label for="skill_flask">Flask</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_fastapi" value="FastAPI">
+                            <label for="skill_fastapi">FastAPI</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_spring" value="Spring Boot">
+                            <label for="skill_spring">Spring Boot</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_dotnet" value=".NET">
+                            <label for="skill_dotnet">.NET</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_laravel" value="Laravel">
+                            <label for="skill_laravel">Laravel</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bancos de Dados -->
+                <div class="skills-category">
+                    <h3>🗄️ Bancos de Dados</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_sql" value="SQL">
+                            <label for="skill_sql">SQL</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_mysql" value="MySQL">
+                            <label for="skill_mysql">MySQL</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_postgresql" value="PostgreSQL">
+                            <label for="skill_postgresql">PostgreSQL</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_mongodb" value="MongoDB">
+                            <label for="skill_mongodb">MongoDB</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_redis" value="Redis">
+                            <label for="skill_redis">Redis</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_oracle" value="Oracle">
+                            <label for="skill_oracle">Oracle</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_sqlserver" value="SQL Server">
+                            <label for="skill_sqlserver">SQL Server</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_firebase" value="Firebase">
+                            <label for="skill_firebase">Firebase</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Cloud -->
+                <div class="skills-category">
+                    <h3>☁️ DevOps & Cloud</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_docker" value="Docker">
+                            <label for="skill_docker">Docker</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_kubernetes" value="Kubernetes">
+                            <label for="skill_kubernetes">Kubernetes</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_aws" value="AWS">
+                            <label for="skill_aws">AWS</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_azure" value="Azure">
+                            <label for="skill_azure">Azure</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_gcp" value="Google Cloud">
+                            <label for="skill_gcp">Google Cloud</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_git" value="Git">
+                            <label for="skill_git">Git</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_jenkins" value="Jenkins">
+                            <label for="skill_jenkins">Jenkins</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_terraform" value="Terraform">
+                            <label for="skill_terraform">Terraform</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_ansible" value="Ansible">
+                            <label for="skill_ansible">Ansible</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_cicd" value="CI/CD">
+                            <label for="skill_cicd">CI/CD</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science & IA -->
+                <div class="skills-category">
+                    <h3>📊 Data Science & IA</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_pandas" value="Pandas">
+                            <label for="skill_pandas">Pandas</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_numpy" value="NumPy">
+                            <label for="skill_numpy">NumPy</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_ml" value="Machine Learning">
+                            <label for="skill_ml">Machine Learning</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_tensorflow" value="TensorFlow">
+                            <label for="skill_tensorflow">TensorFlow</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_pytorch" value="PyTorch">
+                            <label for="skill_pytorch">PyTorch</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_scikit" value="Scikit-learn">
+                            <label for="skill_scikit">Scikit-learn</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_powerbi" value="Power BI">
+                            <label for="skill_powerbi">Power BI</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_tableau" value="Tableau">
+                            <label for="skill_tableau">Tableau</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing & QA -->
+                <div class="skills-category">
+                    <h3>🧪 Testing & QA</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_selenium" value="Selenium">
+                            <label for="skill_selenium">Selenium</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_cypress" value="Cypress">
+                            <label for="skill_cypress">Cypress</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_jest" value="Jest">
+                            <label for="skill_jest">Jest</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_pytest" value="Pytest">
+                            <label for="skill_pytest">Pytest</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_junit" value="JUnit">
+                            <label for="skill_junit">JUnit</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_postman" value="Postman">
+                            <label for="skill_postman">Postman</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="skills-category">
+                    <h3>📱 Mobile</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_reactnative" value="React Native">
+                            <label for="skill_reactnative">React Native</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_flutter" value="Flutter">
+                            <label for="skill_flutter">Flutter</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_android" value="Android">
+                            <label for="skill_android">Android</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_ios" value="iOS">
+                            <label for="skill_ios">iOS</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outras -->
+                <div class="skills-category">
+                    <h3>🔧 Outras Tecnologias</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_graphql" value="GraphQL">
+                            <label for="skill_graphql">GraphQL</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_restapi" value="REST API">
+                            <label for="skill_restapi">REST API</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_microservices" value="Microservices">
+                            <label for="skill_microservices">Microservices</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_agile" value="Agile/Scrum">
+                            <label for="skill_agile">Agile/Scrum</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_linux" value="Linux">
+                            <label for="skill_linux">Linux</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="skill_excel" value="Excel Avançado">
+                            <label for="skill_excel">Excel Avançado</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tempo_disponivel_estudo">Tempo disponível para estudo (horas/semana): *</label>
+                <select id="tempo_disponivel_estudo" required>
+                    <option value="">Selecione...</option>
+                    <option value="Menos de 5 horas/semana">Menos de 5 horas/semana</option>
+                    <option value="5-10 horas/semana">5-10 horas/semana</option>
+                    <option value="10-20 horas/semana">10-20 horas/semana</option>
+                    <option value="Mais de 20 horas/semana">Mais de 20 horas/semana</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                ✨ Gerar Plano de Carreira com IA
+            </button>
+        </form>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>🤖 Gerando seu plano personalizado com IA...</p>
+            <p style="color: #666; font-size: 0.9em;">Isso pode levar alguns segundos</p>
+        </div>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        // Controle de seções
+        const objetivoSelect = document.getElementById('objetivo_principal');
+        const atualizarSection = document.getElementById('atualizarSection');
+        const realocarSection = document.getElementById('realocarSection');
+
+        objetivoSelect.addEventListener('change', function() {
+            atualizarSection.classList.remove('active');
+            realocarSection.classList.remove('active');
+
+            if (this.value === 'Atualizar Carreira') {
+                atualizarSection.classList.add('active');
+            } else if (this.value === 'Realocar Carreira') {
+                realocarSection.classList.add('active');
+            }
+        });
+
+        // Submissão do formulário
+        document.getElementById('careerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            const message = document.getElementById('message');
+
+            // Coletar dados do formulário
+            const formData = {
+                objetivo_principal: document.getElementById('objetivo_principal').value,
+                profissao_atual: document.getElementById('profissao_atual').value,
+                anos_experiencia: parseInt(document.getElementById('anos_experiencia').value),
+                nivel_atual: document.getElementById('nivel_atual').value,
+                tempo_disponivel_estudo: document.getElementById('tempo_disponivel_estudo').value,
+            };
+
+            // Coletar TODAS as habilidades técnicas selecionadas
+            const skills = [];
+            document.querySelectorAll('input[id^="skill_"]:checked').forEach(checkbox => {
+                skills.push(checkbox.value);
+            });
+            formData.habilidades_atuais_hard = skills;
+
+            // Dados específicos por objetivo
+            if (formData.objetivo_principal === 'Atualizar Carreira') {
+                formData.area_especializacao_desejada = document.getElementById('area_especializacao_desejada').value;
+                formData.objetivo_curto_prazo = document.getElementById('objetivo_curto_prazo').value;
+            } else if (formData.objetivo_principal === 'Realocar Carreira') {
+                formData.nova_area_interesse = document.getElementById('nova_area_interesse').value;
+                
+                const motivacoes = [];
+                document.querySelectorAll('input[id^="motiv"]:checked').forEach(checkbox => {
+                    motivacoes.push(checkbox.value);
+                });
+                formData.motivacao_realocacao = motivacoes;
+
+                const softSkills = [];
+                document.querySelectorAll('input[id^="soft"]:checked').forEach(checkbox => {
+                    softSkills.push(checkbox.value);
+                });
+                formData.habilidades_transferiveis_soft = softSkills;
+
+                formData.experiencia_nao_tech_relevante = document.getElementById('experiencia_nao_tech_relevante').value;
+                formData.faixa_salarial_desejada = document.getElementById('faixa_salarial_desejada').value;
+            }
+
+            // Mostrar loading
+            submitBtn.disabled = true;
+            loading.classList.add('active');
+            message.style.display = 'none';
+
+            try {
+                const response = await fetch('/gerar-plano', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    message.className = 'message success';
+                    message.innerHTML = `
+                        <strong>✅ Sucesso!</strong><br>
+                        ${result.message}<br>
+                        <strong>Arquivo:</strong> ${result.arquivo}<br>
+                        <strong>Salvo em:</strong> ${result.caminho}
+                    `;
+                } else {
+                    message.className = 'message error';
+                    message.innerHTML = `<strong>❌ Erro:</strong> ${result.message}`;
+                }
+            } catch (error) {
+                message.className = 'message error';
+                message.innerHTML = `<strong>❌ Erro:</strong> ${error.message}`;
+            } finally {
+                submitBtn.disabled = false;
+                loading.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
