@@ -1,0 +1,1001 @@
+profissao_atual,anos_experiencia,nivel_atual,objetivo_principal,area_interesse,tempo_disponivel_estudo,num_habilidades,habilidades_atuais,motivacao,score_adequacao
+Suporte Técnico,6,Pleno,Atualizar Carreira,Segurança da Informação,20,2,"SIEM,Pentest",7,100.0
+Gerente de Projetos,2,Júnior,Realocar Carreira,Inteligência Artificial,20,3,"Computer Vision,PyTorch,Python",8,100.0
+Administrador de Redes,11,Sênior,Realocar Carreira,DevOps,15,5,"Docker,Kubernetes,AWS,Terraform,CI/CD",5,100.0
+Administrador de Redes,20,Sênior,Realocar Carreira,Mobile,25,3,"Swift,Kotlin,Android",6,100.0
+Analista de Dados,19,Sênior,Atualizar Carreira,Cloud Computing,10,2,"AWS,GCP",10,100.0
+Analista de Sistemas,17,Sênior,Realocar Carreira,Mobile,15,5,"Android,Swift,Flutter,React Native,Kotlin",9,100.0
+Analista de Sistemas,15,Sênior,Realocar Carreira,Inteligência Artificial,15,5,"TensorFlow,PyTorch,Python,Computer Vision,NLP",9,100.0
+QA Tester,2,Júnior,Atualizar Carreira,DevOps,25,3,"CI/CD,AWS,Kubernetes",10,100.0
+QA Tester,4,Pleno,Realocar Carreira,Segurança da Informação,25,2,"Firewall,OWASP",7,100.0
+Analista de Dados,13,Sênior,Realocar Carreira,Cloud Computing,15,3,"Azure,Containers,GCP",5,100.0
+Suporte Técnico,19,Sênior,Atualizar Carreira,Segurança da Informação,20,4,"SIEM,OWASP,Firewall,Pentest",7,100.0
+Administrador de Redes,9,Sênior,Realocar Carreira,Mobile,20,5,"Android,React Native,Flutter,iOS,Swift",8,100.0
+Desenvolvedor,6,Pleno,Realocar Carreira,DevOps,15,5,"Terraform,Linux,Kubernetes,Git,CI/CD",7,100.0
+DBA,18,Sênior,Atualizar Carreira,Cloud Computing,10,5,"GCP,Azure,Containers,Serverless,AWS",5,100.0
+Analista de Dados,19,Sênior,Realocar Carreira,Desenvolvimento Web,10,5,"Node.js,Python,React,CSS,Java",10,100.0
+QA Tester,0,Júnior,Atualizar Carreira,DevOps,15,5,"Kubernetes,Docker,AWS,Git,CI/CD",10,100.0
+Suporte Técnico,4,Pleno,Atualizar Carreira,Cloud Computing,15,5,"Serverless,Azure,GCP,Containers,AWS",9,100.0
+QA Tester,3,Pleno,Atualizar Carreira,Segurança da Informação,10,5,"Criptografia,OWASP,SIEM,Pentest,Firewall",6,100.0
+Desenvolvedor,7,Sênior,Atualizar Carreira,Desenvolvimento Web,10,4,"HTML,Node.js,React,JavaScript",6,100.0
+Analista de Sistemas,16,Sênior,Atualizar Carreira,Data Science,25,2,"Estatística,R",7,100.0
+DBA,19,Sênior,Realocar Carreira,Desenvolvimento Web,20,4,"Java,Node.js,JavaScript,CSS",10,100.0
+Gerente de Projetos,1,Júnior,Realocar Carreira,UX/UI Design,10,2,"Sketch,Prototipagem",8,84.58
+Analista de Dados,7,Sênior,Atualizar Carreira,Data Science,15,4,"Python,Machine Learning,R,NumPy",7,100.0
+Desenvolvedor,0,Júnior,Realocar Carreira,UX/UI Design,15,5,"Prototipagem,Adobe XD,Figma,Design Thinking,Sketch",5,92.55
+Designer,11,Sênior,Atualizar Carreira,UX/UI Design,30,2,"Design Thinking,Sketch",7,100.0
+QA Tester,0,Júnior,Realocar Carreira,Desenvolvimento Web,15,3,"HTML,Node.js,Python",6,90.09
+Analista de Sistemas,9,Sênior,Realocar Carreira,Inteligência Artificial,20,4,"Python,NLP,PyTorch,TensorFlow",7,100.0
+Administrador de Redes,6,Pleno,Atualizar Carreira,DevOps,5,3,"Docker,Kubernetes,Git",6,97.56
+Analista de Dados,1,Júnior,Atualizar Carreira,Cloud Computing,15,4,"AWS,GCP,Serverless,Azure",10,100.0
+Desenvolvedor,4,Pleno,Atualizar Carreira,Desenvolvimento Web,15,3,"Python,CSS,HTML",8,100.0
+QA Tester,9,Sênior,Atualizar Carreira,Segurança da Informação,15,3,"Criptografia,Firewall,SIEM",10,100.0
+Desenvolvedor,20,Sênior,Realocar Carreira,Desenvolvimento Web,15,5,"CSS,JavaScript,Node.js,React,HTML",5,100.0
+Analista de Dados,15,Sênior,Atualizar Carreira,Data Science,20,4,"Estatística,Python,NumPy,Pandas",10,100.0
+Designer,11,Sênior,Realocar Carreira,Desenvolvimento Web,15,2,"JavaScript,React",6,100.0
+QA Tester,19,Sênior,Realocar Carreira,Desenvolvimento Web,15,2,"Node.js,Python",8,100.0
+QA Tester,0,Júnior,Atualizar Carreira,Segurança da Informação,20,5,"SIEM,Firewall,Pentest,Criptografia,OWASP",8,100.0
+Analista de Sistemas,13,Sênior,Realocar Carreira,Data Science,20,2,"Python,SQL",6,100.0
+Analista de Sistemas,20,Sênior,Atualizar Carreira,Desenvolvimento Web,5,2,"JavaScript,Python",5,96.3
+Desenvolvedor,2,Júnior,Atualizar Carreira,Mobile,10,5,"Flutter,Swift,React Native,Kotlin,Android",9,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,Inteligência Artificial,15,2,"NLP,TensorFlow",8,100.0
+QA Tester,8,Sênior,Realocar Carreira,Cloud Computing,30,4,"Containers,AWS,Azure,GCP",9,100.0
+Designer,19,Sênior,Atualizar Carreira,Mobile,20,4,"Swift,React Native,Kotlin,Flutter",10,100.0
+QA Tester,4,Pleno,Atualizar Carreira,Segurança da Informação,20,4,"SIEM,Criptografia,OWASP,Pentest",8,100.0
+DBA,13,Sênior,Realocar Carreira,Data Science,25,3,"Python,Machine Learning,SQL",9,100.0
+Gerente de Projetos,0,Júnior,Atualizar Carreira,Data Science,25,2,"R,Python",8,100.0
+Analista de Dados,18,Sênior,Realocar Carreira,UX/UI Design,5,5,"Prototipagem,Sketch,Figma,Design Thinking,Adobe XD",5,100.0
+Desenvolvedor,6,Pleno,Atualizar Carreira,Mobile,15,5,"Swift,Flutter,Android,Kotlin,iOS",9,100.0
+Designer,10,Sênior,Realocar Carreira,DevOps,30,3,"Linux,AWS,CI/CD",5,100.0
+Gerente de Projetos,20,Sênior,Realocar Carreira,Inteligência Artificial,20,4,"Python,PyTorch,Computer Vision,TensorFlow",8,100.0
+DBA,3,Pleno,Realocar Carreira,Data Science,10,2,"Pandas,NumPy",5,91.59
+Designer,0,Júnior,Atualizar Carreira,UX/UI Design,10,4,"Sketch,Figma,Design Thinking,Adobe XD",9,100.0
+Designer,17,Sênior,Realocar Carreira,Desenvolvimento Web,20,3,"Node.js,React,CSS",5,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,DevOps,10,2,"Kubernetes,CI/CD",9,100.0
+Designer,4,Pleno,Atualizar Carreira,Desenvolvimento Web,15,2,"CSS,React",8,100.0
+Desenvolvedor,0,Júnior,Atualizar Carreira,Mobile,15,5,"React Native,Swift,Kotlin,Android,iOS",7,100.0
+Designer,11,Sênior,Realocar Carreira,DevOps,15,5,"CI/CD,Docker,Linux,Kubernetes,Terraform",7,100.0
+Gerente de Projetos,6,Pleno,Atualizar Carreira,Cloud Computing,15,3,"Serverless,AWS,GCP",7,100.0
+Desenvolvedor,5,Pleno,Atualizar Carreira,Mobile,20,4,"Kotlin,Swift,Flutter,iOS",5,100.0
+Desenvolvedor,9,Sênior,Realocar Carreira,Inteligência Artificial,5,3,"PyTorch,NLP,Python",7,92.64
+Administrador de Redes,14,Sênior,Realocar Carreira,Inteligência Artificial,10,3,"TensorFlow,PyTorch,Python",7,100.0
+QA Tester,17,Sênior,Realocar Carreira,UX/UI Design,15,3,"Sketch,Design Thinking,Figma",5,95.34
+Analista de Sistemas,13,Sênior,Realocar Carreira,Data Science,20,2,"Estatística,Machine Learning",10,100.0
+Desenvolvedor,10,Sênior,Realocar Carreira,Desenvolvimento Web,5,4,"HTML,Java,JavaScript,Python",6,100.0
+Analista de Dados,14,Sênior,Realocar Carreira,Cloud Computing,5,3,"Serverless,AWS,GCP",5,92.8
+Analista de Dados,4,Pleno,Realocar Carreira,Cloud Computing,5,3,"Azure,GCP,Containers",8,87.85
+Analista de Sistemas,8,Sênior,Realocar Carreira,Cloud Computing,20,4,"Containers,Azure,GCP,Serverless",5,100.0
+Gerente de Projetos,4,Pleno,Atualizar Carreira,Cloud Computing,10,4,"Serverless,GCP,AWS,Azure",5,100.0
+DBA,10,Sênior,Atualizar Carreira,DevOps,5,4,"Docker,Git,CI/CD,Terraform",10,100.0
+DBA,16,Sênior,Atualizar Carreira,Cloud Computing,25,4,"Containers,AWS,Azure,Serverless",9,100.0
+QA Tester,3,Pleno,Realocar Carreira,Mobile,10,4,"Swift,iOS,Kotlin,Android",10,100.0
+Suporte Técnico,10,Sênior,Realocar Carreira,DevOps,5,3,"CI/CD,Docker,Terraform",6,100.0
+Desenvolvedor,2,Júnior,Atualizar Carreira,Mobile,10,5,"Kotlin,Android,iOS,Flutter,React Native",5,99.6
+Gerente de Projetos,7,Sênior,Realocar Carreira,UX/UI Design,10,2,"Sketch,Figma",9,100.0
+Suporte Técnico,13,Sênior,Realocar Carreira,Data Science,15,5,"Estatística,Machine Learning,R,Python,SQL",5,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,Data Science,15,5,"Python,R,Machine Learning,Estatística,Pandas",6,100.0
+Suporte Técnico,0,Júnior,Atualizar Carreira,Segurança da Informação,20,3,"OWASP,Criptografia,Firewall",7,100.0
+Suporte Técnico,0,Júnior,Realocar Carreira,Data Science,15,3,"NumPy,R,Machine Learning",9,97.72
+Designer,7,Sênior,Realocar Carreira,Mobile,20,3,"Kotlin,React Native,Flutter",7,100.0
+Suporte Técnico,4,Pleno,Realocar Carreira,Data Science,15,3,"Estatística,Python,Pandas",10,100.0
+Suporte Técnico,7,Sênior,Atualizar Carreira,DevOps,25,5,"AWS,Terraform,CI/CD,Linux,Docker",5,100.0
+DBA,18,Sênior,Atualizar Carreira,DevOps,15,3,"CI/CD,Docker,Linux",5,100.0
+DBA,18,Sênior,Atualizar Carreira,DevOps,5,2,"CI/CD,Terraform",7,100.0
+Administrador de Redes,19,Sênior,Atualizar Carreira,Cloud Computing,15,3,"Serverless,AWS,Containers",7,100.0
+Gerente de Projetos,19,Sênior,Realocar Carreira,Desenvolvimento Web,15,4,"Java,HTML,Node.js,React",5,100.0
+Desenvolvedor,6,Pleno,Atualizar Carreira,Desenvolvimento Web,15,3,"Java,CSS,Python",9,100.0
+Desenvolvedor,18,Sênior,Realocar Carreira,Segurança da Informação,20,4,"Criptografia,Firewall,SIEM,Pentest",6,100.0
+Gerente de Projetos,1,Júnior,Realocar Carreira,Data Science,15,4,"R,SQL,Estatística,Pandas",7,90.89
+Analista de Sistemas,13,Sênior,Realocar Carreira,Cloud Computing,30,5,"Serverless,Containers,AWS,GCP,Azure",5,100.0
+DBA,2,Júnior,Realocar Carreira,Cloud Computing,5,3,"Azure,Serverless,Containers",7,80.63
+QA Tester,1,Júnior,Realocar Carreira,Segurança da Informação,20,3,"SIEM,OWASP,Pentest",9,100.0
+Analista de Dados,13,Sênior,Atualizar Carreira,Cloud Computing,20,2,"Azure,Serverless",8,100.0
+Designer,0,Júnior,Realocar Carreira,Data Science,20,4,"SQL,R,Estatística,Python",10,100.0
+Analista de Sistemas,8,Sênior,Atualizar Carreira,Cloud Computing,25,3,"GCP,Azure,AWS",10,100.0
+Analista de Sistemas,16,Sênior,Realocar Carreira,Segurança da Informação,20,3,"OWASP,Firewall,Criptografia",10,100.0
+Suporte Técnico,10,Sênior,Realocar Carreira,UX/UI Design,10,4,"Figma,Design Thinking,Adobe XD,Sketch",9,100.0
+Desenvolvedor,1,Júnior,Realocar Carreira,Segurança da Informação,20,4,"Criptografia,Pentest,Firewall,OWASP",7,100.0
+DBA,5,Pleno,Realocar Carreira,UX/UI Design,20,4,"Sketch,Prototipagem,Design Thinking,Figma",9,100.0
+Gerente de Projetos,1,Júnior,Atualizar Carreira,Data Science,5,4,"Python,NumPy,Machine Learning,SQL",8,89.75
+Analista de Dados,16,Sênior,Atualizar Carreira,Inteligência Artificial,15,4,"PyTorch,TensorFlow,Python,NLP",8,100.0
+Desenvolvedor,19,Sênior,Realocar Carreira,UX/UI Design,10,2,"Design Thinking,Sketch",5,99.77
+Desenvolvedor,7,Sênior,Realocar Carreira,UX/UI Design,20,3,"Adobe XD,Prototipagem,Design Thinking",6,100.0
+Analista de Sistemas,5,Pleno,Realocar Carreira,UX/UI Design,5,4,"Sketch,Adobe XD,Design Thinking,Prototipagem",5,100.0
+DBA,16,Sênior,Atualizar Carreira,DevOps,20,4,"CI/CD,Linux,Git,Kubernetes",7,100.0
+Designer,13,Sênior,Atualizar Carreira,Mobile,25,3,"React Native,Kotlin,iOS",8,100.0
+QA Tester,6,Pleno,Realocar Carreira,Data Science,20,3,"Pandas,R,Python",7,100.0
+Analista de Dados,11,Sênior,Realocar Carreira,Desenvolvimento Web,15,3,"JavaScript,Python,React",8,100.0
+Analista de Dados,1,Júnior,Realocar Carreira,Data Science,5,4,"Pandas,Python,SQL,Machine Learning",10,100.0
+Administrador de Redes,20,Sênior,Realocar Carreira,Mobile,30,3,"Android,Flutter,Kotlin",9,100.0
+Desenvolvedor,0,Júnior,Realocar Carreira,Segurança da Informação,10,3,"Criptografia,Pentest,SIEM",5,89.21
+Administrador de Redes,14,Sênior,Realocar Carreira,Desenvolvimento Web,20,5,"Python,Java,React,HTML,Node.js",8,100.0
+Analista de Dados,5,Pleno,Atualizar Carreira,Inteligência Artificial,20,3,"NLP,PyTorch,Python",8,100.0
+QA Tester,20,Sênior,Realocar Carreira,Data Science,5,2,"Estatística,Machine Learning",10,100.0
+Designer,4,Pleno,Atualizar Carreira,Mobile,25,4,"Android,Swift,iOS,React Native",6,100.0
+DBA,16,Sênior,Atualizar Carreira,DevOps,10,5,"CI/CD,Git,Kubernetes,Linux,Terraform",6,100.0
+Administrador de Redes,10,Sênior,Realocar Carreira,DevOps,10,2,"Git,Terraform",5,94.79
+Gerente de Projetos,14,Sênior,Realocar Carreira,UX/UI Design,5,3,"Sketch,Adobe XD,Figma",9,100.0
+Desenvolvedor,12,Sênior,Realocar Carreira,UX/UI Design,15,2,"Figma,Design Thinking",6,100.0
+Gerente de Projetos,0,Júnior,Realocar Carreira,Inteligência Artificial,20,2,"TensorFlow,NLP",7,97.04
+Administrador de Redes,12,Sênior,Atualizar Carreira,Segurança da Informação,20,5,"Firewall,OWASP,Pentest,Criptografia,SIEM",5,100.0
+Analista de Sistemas,6,Pleno,Atualizar Carreira,Data Science,20,5,"Machine Learning,Python,SQL,Pandas,Estatística",5,100.0
+DBA,16,Sênior,Realocar Carreira,Mobile,5,2,"React Native,Kotlin",5,94.4
+Designer,14,Sênior,Realocar Carreira,Mobile,10,5,"Android,iOS,React Native,Swift,Kotlin",10,100.0
+Gerente de Projetos,16,Sênior,Realocar Carreira,Data Science,5,3,"NumPy,Python,SQL",8,100.0
+Analista de Sistemas,1,Júnior,Atualizar Carreira,Desenvolvimento Web,10,2,"React,HTML",10,100.0
+Gerente de Projetos,19,Sênior,Realocar Carreira,DevOps,30,5,"Kubernetes,Git,Docker,CI/CD,Terraform",8,100.0
+Desenvolvedor,2,Júnior,Realocar Carreira,Segurança da Informação,10,2,"OWASP,SIEM",8,86.59
+DBA,17,Sênior,Realocar Carreira,Desenvolvimento Web,25,2,"Node.js,HTML",9,100.0
+Administrador de Redes,13,Sênior,Realocar Carreira,Cloud Computing,10,5,"GCP,Azure,AWS,Containers,Serverless",5,100.0
+Designer,20,Sênior,Realocar Carreira,Inteligência Artificial,15,2,"PyTorch,TensorFlow",10,100.0
+Administrador de Redes,5,Pleno,Atualizar Carreira,Cloud Computing,25,4,"Azure,Containers,AWS,Serverless",8,100.0
+Gerente de Projetos,13,Sênior,Atualizar Carreira,DevOps,15,5,"Terraform,CI/CD,AWS,Git,Docker",5,100.0
+Gerente de Projetos,19,Sênior,Realocar Carreira,Segurança da Informação,15,3,"Pentest,Firewall,Criptografia",6,100.0
+Desenvolvedor,11,Sênior,Atualizar Carreira,Desenvolvimento Web,20,3,"Node.js,CSS,React",5,100.0
+Suporte Técnico,17,Sênior,Realocar Carreira,DevOps,15,4,"CI/CD,Docker,Terraform,AWS",7,100.0
+Analista de Sistemas,8,Sênior,Realocar Carreira,Cloud Computing,20,2,"Serverless,AWS",10,100.0
+Analista de Dados,20,Sênior,Realocar Carreira,Mobile,15,3,"Flutter,iOS,React Native",7,100.0
+QA Tester,9,Sênior,Atualizar Carreira,DevOps,15,4,"Terraform,CI/CD,AWS,Kubernetes",6,100.0
+Suporte Técnico,3,Pleno,Realocar Carreira,Data Science,25,5,"Pandas,SQL,Estatística,NumPy,R",8,100.0
+Analista de Sistemas,1,Júnior,Atualizar Carreira,Cloud Computing,10,4,"GCP,Serverless,AWS,Containers",7,100.0
+Desenvolvedor,14,Sênior,Realocar Carreira,Inteligência Artificial,15,3,"Python,PyTorch,Computer Vision",6,100.0
+Designer,4,Pleno,Realocar Carreira,Desenvolvimento Web,10,5,"JavaScript,Java,CSS,React,HTML",10,100.0
+QA Tester,1,Júnior,Atualizar Carreira,Segurança da Informação,15,5,"OWASP,SIEM,Criptografia,Pentest,Firewall",7,100.0
+QA Tester,9,Sênior,Realocar Carreira,Inteligência Artificial,15,3,"Computer Vision,PyTorch,Python",9,100.0
+Administrador de Redes,0,Júnior,Realocar Carreira,Mobile,15,4,"Flutter,Swift,React Native,Kotlin",5,86.97
+DBA,11,Sênior,Realocar Carreira,Cloud Computing,15,4,"AWS,GCP,Azure,Serverless",6,100.0
+Analista de Dados,0,Júnior,Realocar Carreira,UX/UI Design,25,2,"Design Thinking,Adobe XD",8,100.0
+Suporte Técnico,9,Sênior,Atualizar Carreira,Segurança da Informação,5,3,"Firewall,Criptografia,SIEM",7,100.0
+Analista de Dados,19,Sênior,Realocar Carreira,UX/UI Design,10,3,"Figma,Prototipagem,Sketch",6,100.0
+Desenvolvedor,20,Sênior,Atualizar Carreira,Desenvolvimento Web,15,2,"Node.js,React",6,100.0
+Desenvolvedor,17,Sênior,Atualizar Carreira,DevOps,15,5,"Kubernetes,Git,AWS,Terraform,Linux",10,100.0
+Designer,20,Sênior,Realocar Carreira,Segurança da Informação,20,3,"OWASP,Criptografia,Firewall",9,100.0
+Suporte Técnico,8,Sênior,Atualizar Carreira,Cloud Computing,15,3,"AWS,Containers,Serverless",9,100.0
+Analista de Dados,8,Sênior,Realocar Carreira,DevOps,15,3,"Linux,Kubernetes,Git",6,100.0
+Desenvolvedor,0,Júnior,Realocar Carreira,DevOps,10,3,"Terraform,Docker,Linux",7,86.67
+DBA,20,Sênior,Realocar Carreira,Segurança da Informação,25,2,"Criptografia,SIEM",9,100.0
+Analista de Dados,10,Sênior,Atualizar Carreira,Inteligência Artificial,20,4,"TensorFlow,NLP,PyTorch,Python",9,100.0
+Administrador de Redes,14,Sênior,Atualizar Carreira,Segurança da Informação,5,2,"Pentest,Firewall",10,100.0
+QA Tester,19,Sênior,Realocar Carreira,Data Science,20,3,"SQL,Pandas,NumPy",10,100.0
+Analista de Dados,10,Sênior,Atualizar Carreira,Inteligência Artificial,20,4,"PyTorch,NLP,Computer Vision,TensorFlow",8,100.0
+DBA,0,Júnior,Realocar Carreira,Cloud Computing,30,4,"GCP,Serverless,AWS,Azure",5,100.0
+DBA,14,Sênior,Realocar Carreira,UX/UI Design,25,5,"Design Thinking,Prototipagem,Sketch,Adobe XD,Figma",8,100.0
+Administrador de Redes,6,Pleno,Realocar Carreira,Mobile,10,4,"iOS,Kotlin,React Native,Swift",8,100.0
+Desenvolvedor,1,Júnior,Realocar Carreira,Desenvolvimento Web,10,2,"HTML,CSS",5,91.35
+QA Tester,1,Júnior,Realocar Carreira,Data Science,15,3,"NumPy,R,Machine Learning",8,88.64
+QA Tester,13,Sênior,Atualizar Carreira,Desenvolvimento Web,15,4,"CSS,JavaScript,HTML,Java",8,100.0
+Administrador de Redes,5,Pleno,Atualizar Carreira,DevOps,15,3,"Terraform,Kubernetes,Docker",10,100.0
+Analista de Sistemas,7,Sênior,Atualizar Carreira,Desenvolvimento Web,15,3,"JavaScript,HTML,Node.js",7,100.0
+Gerente de Projetos,7,Sênior,Realocar Carreira,Mobile,30,2,"Swift,iOS",8,100.0
+DBA,16,Sênior,Atualizar Carreira,Cloud Computing,10,5,"Containers,AWS,Azure,Serverless,GCP",8,100.0
+Suporte Técnico,20,Sênior,Atualizar Carreira,Cloud Computing,20,5,"Serverless,GCP,Azure,Containers,AWS",6,100.0
+Suporte Técnico,13,Sênior,Realocar Carreira,Data Science,15,2,"Pandas,NumPy",7,100.0
+Analista de Sistemas,3,Pleno,Realocar Carreira,DevOps,20,4,"Docker,CI/CD,Kubernetes,Git",5,100.0
+Gerente de Projetos,9,Sênior,Atualizar Carreira,Data Science,20,3,"Python,R,Estatística",10,100.0
+Analista de Sistemas,1,Júnior,Realocar Carreira,Segurança da Informação,30,5,"Criptografia,Firewall,SIEM,Pentest,OWASP",9,100.0
+Suporte Técnico,0,Júnior,Atualizar Carreira,DevOps,20,3,"Kubernetes,Docker,Git",10,100.0
+Designer,7,Sênior,Realocar Carreira,Desenvolvimento Web,10,2,"Node.js,CSS",8,100.0
+Gerente de Projetos,17,Sênior,Realocar Carreira,DevOps,20,5,"Linux,Kubernetes,AWS,Docker,Terraform",6,100.0
+DBA,17,Sênior,Realocar Carreira,Cloud Computing,10,4,"Serverless,GCP,Azure,AWS",7,100.0
+Desenvolvedor,6,Pleno,Realocar Carreira,Cloud Computing,10,2,"GCP,Azure",8,87.28
+Suporte Técnico,4,Pleno,Realocar Carreira,Inteligência Artificial,10,4,"Python,Computer Vision,TensorFlow,NLP",9,100.0
+Analista de Dados,4,Pleno,Realocar Carreira,DevOps,15,3,"Docker,Linux,Terraform",9,100.0
+Designer,10,Sênior,Atualizar Carreira,Mobile,10,3,"React Native,Swift,Android",7,100.0
+Suporte Técnico,8,Sênior,Atualizar Carreira,Cloud Computing,20,2,"GCP,Azure",5,100.0
+DBA,17,Sênior,Realocar Carreira,DevOps,15,5,"Linux,Kubernetes,AWS,Git,Docker",9,100.0
+Designer,18,Sênior,Atualizar Carreira,UX/UI Design,15,5,"Adobe XD,Sketch,Figma,Design Thinking,Prototipagem",7,100.0
+DBA,2,Júnior,Realocar Carreira,Mobile,20,3,"Flutter,React Native,Android",7,100.0
+Designer,18,Sênior,Realocar Carreira,Segurança da Informação,20,5,"Pentest,Firewall,Criptografia,SIEM,OWASP",8,100.0
+Administrador de Redes,7,Sênior,Atualizar Carreira,Segurança da Informação,10,2,"Criptografia,Pentest",5,100.0
+Designer,17,Sênior,Realocar Carreira,DevOps,30,3,"Docker,Terraform,CI/CD",5,100.0
+Gerente de Projetos,17,Sênior,Realocar Carreira,Mobile,10,5,"Flutter,iOS,Android,Kotlin,React Native",6,99.79
+Desenvolvedor,6,Pleno,Realocar Carreira,Cloud Computing,10,2,"AWS,GCP",10,100.0
+Gerente de Projetos,10,Sênior,Atualizar Carreira,DevOps,25,2,"Git,CI/CD",8,100.0
+QA Tester,17,Sênior,Realocar Carreira,Mobile,20,4,"Flutter,Kotlin,Swift,React Native",10,100.0
+Administrador de Redes,6,Pleno,Atualizar Carreira,Segurança da Informação,10,3,"OWASP,Criptografia,SIEM",5,100.0
+DBA,3,Pleno,Realocar Carreira,Inteligência Artificial,20,4,"PyTorch,NLP,Computer Vision,TensorFlow",10,100.0
+Administrador de Redes,8,Sênior,Realocar Carreira,Segurança da Informação,20,3,"SIEM,Criptografia,OWASP",5,100.0
+Designer,1,Júnior,Realocar Carreira,DevOps,20,4,"Linux,AWS,Kubernetes,Docker",9,100.0
+Designer,2,Júnior,Atualizar Carreira,Desenvolvimento Web,20,2,"Java,JavaScript",8,100.0
+Analista de Dados,16,Sênior,Atualizar Carreira,Data Science,20,5,"Python,SQL,Pandas,NumPy,Machine Learning",6,100.0
+Desenvolvedor,18,Sênior,Atualizar Carreira,DevOps,5,2,"Git,CI/CD",8,100.0
+Suporte Técnico,18,Sênior,Realocar Carreira,Desenvolvimento Web,15,3,"CSS,Node.js,Python",7,100.0
+Desenvolvedor,0,Júnior,Atualizar Carreira,DevOps,10,3,"Kubernetes,Docker,AWS",6,100.0
+Designer,15,Sênior,Realocar Carreira,UX/UI Design,30,4,"Design Thinking,Adobe XD,Figma,Sketch",10,100.0
+QA Tester,12,Sênior,Atualizar Carreira,Desenvolvimento Web,25,3,"Java,CSS,HTML",5,100.0
+Designer,20,Sênior,Atualizar Carreira,Desenvolvimento Web,5,4,"Node.js,Python,React,HTML",10,100.0
+DBA,19,Sênior,Realocar Carreira,UX/UI Design,5,5,"Figma,Sketch,Design Thinking,Prototipagem,Adobe XD",7,100.0
+DBA,13,Sênior,Atualizar Carreira,Cloud Computing,15,2,"Serverless,GCP",8,100.0
+Gerente de Projetos,6,Pleno,Atualizar Carreira,Cloud Computing,20,4,"AWS,Azure,GCP,Containers",9,100.0
+DBA,9,Sênior,Realocar Carreira,Desenvolvimento Web,15,2,"React,HTML",5,100.0
+Administrador de Redes,11,Sênior,Realocar Carreira,Desenvolvimento Web,10,5,"React,Node.js,Python,JavaScript,HTML",5,100.0
+DBA,16,Sênior,Realocar Carreira,Data Science,15,4,"Machine Learning,SQL,R,Estatística",10,100.0
+Designer,20,Sênior,Atualizar Carreira,UX/UI Design,20,3,"Design Thinking,Adobe XD,Prototipagem",8,100.0
+DBA,14,Sênior,Realocar Carreira,DevOps,15,5,"Git,Terraform,Kubernetes,Linux,AWS",8,100.0
+Designer,7,Sênior,Atualizar Carreira,Desenvolvimento Web,10,2,"Python,Node.js",5,100.0
+DBA,2,Júnior,Realocar Carreira,Data Science,15,3,"Pandas,Estatística,R",7,88.28
+DBA,11,Sênior,Realocar Carreira,Mobile,20,2,"iOS,Flutter",10,100.0
+Analista de Sistemas,7,Sênior,Realocar Carreira,Mobile,15,3,"React Native,Flutter,Kotlin",7,100.0
+Designer,4,Pleno,Realocar Carreira,Segurança da Informação,30,4,"SIEM,OWASP,Criptografia,Firewall",5,100.0
+Analista de Dados,12,Sênior,Realocar Carreira,Segurança da Informação,20,5,"Criptografia,Pentest,SIEM,OWASP,Firewall",7,100.0
+Analista de Sistemas,19,Sênior,Realocar Carreira,Segurança da Informação,20,2,"Criptografia,OWASP",10,100.0
+Gerente de Projetos,17,Sênior,Atualizar Carreira,DevOps,15,4,"Terraform,CI/CD,Kubernetes,AWS",7,100.0
+Designer,15,Sênior,Realocar Carreira,Data Science,10,2,"Estatística,Pandas",6,100.0
+Administrador de Redes,10,Sênior,Realocar Carreira,Inteligência Artificial,15,2,"Computer Vision,Python",7,100.0
+Analista de Sistemas,15,Sênior,Realocar Carreira,Inteligência Artificial,5,4,"PyTorch,TensorFlow,Computer Vision,NLP",7,100.0
+Administrador de Redes,3,Pleno,Realocar Carreira,Cloud Computing,10,4,"GCP,Azure,Serverless,Containers",8,100.0
+Analista de Sistemas,12,Sênior,Atualizar Carreira,Data Science,20,4,"Python,Pandas,Estatística,Machine Learning",10,100.0
+Designer,3,Pleno,Realocar Carreira,DevOps,15,4,"Git,Kubernetes,AWS,Docker",10,100.0
+Administrador de Redes,15,Sênior,Realocar Carreira,DevOps,20,4,"AWS,Kubernetes,CI/CD,Git",5,100.0
+Suporte Técnico,18,Sênior,Realocar Carreira,Segurança da Informação,10,5,"Criptografia,Firewall,SIEM,OWASP,Pentest",5,98.19
+Designer,10,Sênior,Realocar Carreira,DevOps,20,2,"Terraform,Docker",9,100.0
+Gerente de Projetos,13,Sênior,Atualizar Carreira,Data Science,20,5,"NumPy,SQL,R,Machine Learning,Python",7,100.0
+Designer,20,Sênior,Realocar Carreira,Mobile,10,5,"Flutter,Swift,Kotlin,iOS,Android",5,100.0
+QA Tester,3,Pleno,Atualizar Carreira,DevOps,5,4,"AWS,Docker,CI/CD,Kubernetes",5,100.0
+Designer,7,Sênior,Atualizar Carreira,UX/UI Design,20,5,"Figma,Sketch,Adobe XD,Prototipagem,Design Thinking",9,100.0
+Gerente de Projetos,2,Júnior,Realocar Carreira,Inteligência Artificial,20,4,"NLP,TensorFlow,PyTorch,Computer Vision",10,100.0
+QA Tester,7,Sênior,Realocar Carreira,Desenvolvimento Web,15,2,"Node.js,CSS",5,100.0
+Gerente de Projetos,12,Sênior,Atualizar Carreira,DevOps,10,4,"Terraform,AWS,CI/CD,Kubernetes",9,100.0
+Gerente de Projetos,10,Sênior,Atualizar Carreira,DevOps,20,2,"Kubernetes,Terraform",5,100.0
+QA Tester,6,Pleno,Realocar Carreira,Cloud Computing,10,2,"Azure,Containers",9,94.14
+Analista de Dados,12,Sênior,Atualizar Carreira,Data Science,5,4,"R,Python,Machine Learning,SQL",8,100.0
+Analista de Sistemas,17,Sênior,Realocar Carreira,Segurança da Informação,20,5,"SIEM,Firewall,Criptografia,Pentest,OWASP",8,100.0
+QA Tester,11,Sênior,Realocar Carreira,Cloud Computing,15,2,"GCP,Containers",7,100.0
+Analista de Sistemas,12,Sênior,Realocar Carreira,Desenvolvimento Web,20,5,"Node.js,Python,CSS,HTML,Java",10,100.0
+QA Tester,11,Sênior,Realocar Carreira,Cloud Computing,15,3,"GCP,Serverless,Azure",5,100.0
+Designer,5,Pleno,Atualizar Carreira,Desenvolvimento Web,15,2,"Python,JavaScript",8,100.0
+Administrador de Redes,2,Júnior,Realocar Carreira,Inteligência Artificial,25,5,"NLP,Computer Vision,Python,PyTorch,TensorFlow",8,100.0
+DBA,0,Júnior,Realocar Carreira,Inteligência Artificial,10,4,"TensorFlow,PyTorch,Computer Vision,Python",8,96.9
+QA Tester,17,Sênior,Realocar Carreira,Cloud Computing,20,4,"Serverless,GCP,Azure,Containers",9,100.0
+Analista de Sistemas,7,Sênior,Atualizar Carreira,Data Science,15,5,"Machine Learning,SQL,Pandas,NumPy,R",7,100.0
+Gerente de Projetos,13,Sênior,Atualizar Carreira,Data Science,10,3,"Machine Learning,R,Python",6,100.0
+Designer,4,Pleno,Atualizar Carreira,UX/UI Design,15,3,"Prototipagem,Sketch,Figma",9,100.0
+Gerente de Projetos,15,Sênior,Realocar Carreira,UX/UI Design,15,2,"Sketch,Design Thinking",7,99.78
+QA Tester,18,Sênior,Realocar Carreira,Inteligência Artificial,20,3,"PyTorch,NLP,TensorFlow",8,100.0
+QA Tester,3,Pleno,Realocar Carreira,Cloud Computing,10,4,"Serverless,AWS,Azure,GCP",8,100.0
+Desenvolvedor,18,Sênior,Atualizar Carreira,Mobile,20,2,"iOS,Kotlin",8,100.0
+Designer,18,Sênior,Realocar Carreira,Segurança da Informação,15,5,"Firewall,Pentest,Criptografia,OWASP,SIEM",8,100.0
+Desenvolvedor,4,Pleno,Atualizar Carreira,Desenvolvimento Web,25,5,"Java,React,CSS,Node.js,JavaScript",8,100.0
+Gerente de Projetos,3,Pleno,Realocar Carreira,Segurança da Informação,20,4,"OWASP,Firewall,Pentest,SIEM",6,100.0
+QA Tester,16,Sênior,Atualizar Carreira,Segurança da Informação,15,4,"OWASP,SIEM,Pentest,Criptografia",5,100.0
+QA Tester,7,Sênior,Realocar Carreira,DevOps,15,2,"Docker,Kubernetes",6,100.0
+QA Tester,10,Sênior,Atualizar Carreira,Desenvolvimento Web,20,2,"Node.js,Python",10,100.0
+QA Tester,6,Pleno,Atualizar Carreira,DevOps,20,4,"Kubernetes,CI/CD,Docker,Linux",5,100.0
+QA Tester,3,Pleno,Atualizar Carreira,Segurança da Informação,15,3,"Pentest,SIEM,Criptografia",7,100.0
+Analista de Sistemas,12,Sênior,Realocar Carreira,DevOps,15,5,"Terraform,CI/CD,Linux,AWS,Git",6,100.0
+DBA,1,Júnior,Realocar Carreira,Mobile,25,4,"Kotlin,Android,React Native,Flutter",9,100.0
+Designer,20,Sênior,Realocar Carreira,DevOps,20,3,"Terraform,CI/CD,Linux",8,100.0
+Analista de Sistemas,17,Sênior,Atualizar Carreira,Desenvolvimento Web,20,3,"HTML,CSS,Java",6,100.0
+Analista de Sistemas,1,Júnior,Atualizar Carreira,Cloud Computing,5,5,"Azure,Serverless,Containers,GCP,AWS",5,96.83
+Gerente de Projetos,17,Sênior,Atualizar Carreira,Data Science,15,5,"SQL,R,NumPy,Machine Learning,Estatística",9,100.0
+Suporte Técnico,1,Júnior,Atualizar Carreira,Segurança da Informação,25,4,"Firewall,SIEM,Criptografia,OWASP",5,100.0
+Administrador de Redes,0,Júnior,Atualizar Carreira,Cloud Computing,10,2,"Azure,Serverless",5,90.76
+Administrador de Redes,3,Pleno,Realocar Carreira,UX/UI Design,15,4,"Sketch,Prototipagem,Adobe XD,Figma",9,100.0
+Analista de Dados,15,Sênior,Realocar Carreira,Desenvolvimento Web,15,5,"Node.js,Java,HTML,React,JavaScript",5,100.0
+Analista de Sistemas,3,Pleno,Realocar Carreira,Desenvolvimento Web,25,3,"CSS,Node.js,JavaScript",9,100.0
+Administrador de Redes,1,Júnior,Realocar Carreira,Cloud Computing,10,4,"GCP,Containers,AWS,Azure",10,100.0
+QA Tester,10,Sênior,Atualizar Carreira,DevOps,10,3,"CI/CD,Docker,Terraform",9,100.0
+DBA,5,Pleno,Atualizar Carreira,Data Science,10,3,"Machine Learning,Pandas,R",8,100.0
+Administrador de Redes,10,Sênior,Atualizar Carreira,Cloud Computing,20,5,"Azure,AWS,GCP,Containers,Serverless",8,100.0
+Gerente de Projetos,11,Sênior,Realocar Carreira,DevOps,15,2,"Git,CI/CD",6,100.0
+Designer,11,Sênior,Atualizar Carreira,Mobile,25,4,"Flutter,Android,iOS,Kotlin",5,100.0
+Gerente de Projetos,7,Sênior,Realocar Carreira,Inteligência Artificial,5,2,"Python,PyTorch",9,100.0
+DBA,3,Pleno,Atualizar Carreira,Data Science,15,5,"Estatística,Pandas,Python,NumPy,Machine Learning",7,100.0
+Analista de Dados,11,Sênior,Realocar Carreira,Data Science,20,4,"NumPy,R,Machine Learning,Python",8,100.0
+Desenvolvedor,10,Sênior,Realocar Carreira,Mobile,15,3,"Flutter,Android,iOS",10,100.0
+Desenvolvedor,17,Sênior,Atualizar Carreira,Desenvolvimento Web,15,3,"Java,React,Node.js",9,100.0
+QA Tester,17,Sênior,Realocar Carreira,UX/UI Design,15,2,"Adobe XD,Prototipagem",7,100.0
+Analista de Sistemas,12,Sênior,Atualizar Carreira,Data Science,10,5,"Estatística,Python,Pandas,R,NumPy",8,100.0
+Analista de Dados,18,Sênior,Realocar Carreira,Segurança da Informação,5,3,"OWASP,Pentest,Criptografia",7,93.65
+Desenvolvedor,1,Júnior,Atualizar Carreira,Desenvolvimento Web,30,3,"HTML,JavaScript,Python",8,100.0
+Desenvolvedor,6,Pleno,Realocar Carreira,Inteligência Artificial,20,2,"PyTorch,TensorFlow",8,100.0
+Designer,4,Pleno,Realocar Carreira,Mobile,10,4,"Flutter,Kotlin,React Native,iOS",7,100.0
+Desenvolvedor,6,Pleno,Atualizar Carreira,Desenvolvimento Web,5,4,"Python,React,Java,Node.js",9,100.0
+Suporte Técnico,19,Sênior,Realocar Carreira,Data Science,20,3,"Machine Learning,Estatística,SQL",7,100.0
+Designer,3,Pleno,Atualizar Carreira,Mobile,15,5,"Kotlin,iOS,React Native,Android,Swift",6,100.0
+Designer,7,Sênior,Realocar Carreira,Mobile,20,5,"Swift,iOS,Android,React Native,Kotlin",5,100.0
+Administrador de Redes,13,Sênior,Realocar Carreira,Data Science,25,2,"R,NumPy",8,100.0
+DBA,1,Júnior,Realocar Carreira,Mobile,10,2,"Flutter,iOS",9,96.81
+Administrador de Redes,8,Sênior,Realocar Carreira,Mobile,15,2,"Android,iOS",10,100.0
+Suporte Técnico,20,Sênior,Realocar Carreira,DevOps,5,5,"Kubernetes,Docker,Terraform,AWS,CI/CD",9,100.0
+Administrador de Redes,4,Pleno,Realocar Carreira,DevOps,10,3,"AWS,Docker,Kubernetes",10,100.0
+DBA,20,Sênior,Atualizar Carreira,DevOps,15,3,"Linux,Docker,AWS",5,100.0
+Administrador de Redes,19,Sênior,Realocar Carreira,UX/UI Design,10,2,"Adobe XD,Design Thinking",6,93.53
+Analista de Dados,7,Sênior,Realocar Carreira,Desenvolvimento Web,10,3,"JavaScript,React,CSS",5,99.11
+Suporte Técnico,5,Pleno,Atualizar Carreira,Segurança da Informação,10,2,"OWASP,Pentest",5,98.55
+QA Tester,16,Sênior,Realocar Carreira,Mobile,20,5,"Android,iOS,Swift,React Native,Flutter",8,100.0
+Analista de Sistemas,0,Júnior,Realocar Carreira,Mobile,15,2,"iOS,Flutter",7,90.6
+Desenvolvedor,20,Sênior,Realocar Carreira,Inteligência Artificial,25,2,"TensorFlow,Python",6,100.0
+Analista de Dados,11,Sênior,Realocar Carreira,Segurança da Informação,20,2,"Firewall,Pentest",7,100.0
+Suporte Técnico,17,Sênior,Atualizar Carreira,DevOps,15,3,"Linux,Kubernetes,Docker",5,100.0
+Gerente de Projetos,4,Pleno,Realocar Carreira,Desenvolvimento Web,10,5,"Java,React,CSS,Python,Node.js",8,100.0
+Suporte Técnico,0,Júnior,Atualizar Carreira,Segurança da Informação,10,4,"SIEM,Pentest,OWASP,Firewall",8,100.0
+Administrador de Redes,9,Sênior,Atualizar Carreira,Cloud Computing,15,3,"Containers,GCP,Serverless",9,100.0
+Designer,8,Sênior,Realocar Carreira,Mobile,15,4,"Flutter,iOS,Android,Swift",6,100.0
+DBA,1,Júnior,Atualizar Carreira,Cloud Computing,10,4,"Serverless,Azure,Containers,AWS",8,100.0
+Gerente de Projetos,8,Sênior,Atualizar Carreira,Data Science,20,4,"SQL,Python,Machine Learning,NumPy",10,100.0
+Gerente de Projetos,0,Júnior,Realocar Carreira,Mobile,10,3,"iOS,Flutter,Swift",5,81.16
+Designer,9,Sênior,Atualizar Carreira,Desenvolvimento Web,25,2,"Java,HTML",9,100.0
+Analista de Dados,3,Pleno,Realocar Carreira,Mobile,25,3,"iOS,Swift,Flutter",10,100.0
+Gerente de Projetos,15,Sênior,Realocar Carreira,Data Science,20,3,"R,Pandas,Estatística",8,100.0
+QA Tester,8,Sênior,Realocar Carreira,Desenvolvimento Web,15,2,"Python,Node.js",9,100.0
+Suporte Técnico,14,Sênior,Realocar Carreira,Cloud Computing,15,3,"AWS,Serverless,Azure",7,100.0
+Analista de Sistemas,0,Júnior,Realocar Carreira,Cloud Computing,20,3,"Azure,AWS,Containers",9,100.0
+QA Tester,13,Sênior,Atualizar Carreira,DevOps,10,4,"AWS,Git,Linux,Docker",10,100.0
+Gerente de Projetos,0,Júnior,Atualizar Carreira,Cloud Computing,20,2,"GCP,Serverless",7,100.0
+DBA,5,Pleno,Realocar Carreira,Mobile,10,4,"React Native,iOS,Swift,Android",7,97.3
+Gerente de Projetos,6,Pleno,Realocar Carreira,Mobile,10,4,"iOS,Android,Kotlin,React Native",10,100.0
+Designer,20,Sênior,Atualizar Carreira,UX/UI Design,20,4,"Adobe XD,Figma,Design Thinking,Sketch",8,100.0
+Analista de Dados,9,Sênior,Realocar Carreira,UX/UI Design,15,5,"Design Thinking,Adobe XD,Sketch,Prototipagem,Figma",9,100.0
+Desenvolvedor,3,Pleno,Realocar Carreira,Cloud Computing,10,2,"GCP,Azure",7,95.67
+Gerente de Projetos,8,Sênior,Atualizar Carreira,Data Science,20,4,"Machine Learning,Estatística,R,NumPy",9,100.0
+Designer,14,Sênior,Realocar Carreira,Inteligência Artificial,20,4,"NLP,TensorFlow,PyTorch,Python",9,100.0
+Gerente de Projetos,17,Sênior,Realocar Carreira,Segurança da Informação,5,4,"Pentest,Firewall,SIEM,Criptografia",6,100.0
+QA Tester,14,Sênior,Realocar Carreira,Desenvolvimento Web,10,4,"HTML,React,Node.js,CSS",8,100.0
+Desenvolvedor,8,Sênior,Realocar Carreira,DevOps,20,5,"Linux,CI/CD,Terraform,AWS,Docker",7,100.0
+Gerente de Projetos,12,Sênior,Realocar Carreira,UX/UI Design,15,2,"Adobe XD,Sketch",6,100.0
+QA Tester,16,Sênior,Realocar Carreira,Desenvolvimento Web,30,2,"CSS,React",9,100.0
+Designer,2,Júnior,Realocar Carreira,Data Science,10,2,"R,SQL",5,82.71
+QA Tester,11,Sênior,Realocar Carreira,Cloud Computing,15,4,"Serverless,Containers,AWS,Azure",7,100.0
+Designer,10,Sênior,Realocar Carreira,Desenvolvimento Web,20,4,"Node.js,Java,HTML,JavaScript",8,100.0
+Analista de Sistemas,16,Sênior,Realocar Carreira,UX/UI Design,30,5,"Design Thinking,Figma,Adobe XD,Sketch,Prototipagem",7,100.0
+QA Tester,18,Sênior,Realocar Carreira,Inteligência Artificial,20,4,"Python,TensorFlow,Computer Vision,PyTorch",7,100.0
+Desenvolvedor,1,Júnior,Realocar Carreira,Cloud Computing,20,2,"GCP,Azure",6,97.64
+Analista de Dados,4,Pleno,Atualizar Carreira,Data Science,5,4,"R,NumPy,Python,Pandas",8,100.0
+Analista de Dados,15,Sênior,Atualizar Carreira,Data Science,20,5,"Python,SQL,Machine Learning,NumPy,Pandas",8,100.0
+Gerente de Projetos,9,Sênior,Realocar Carreira,Inteligência Artificial,15,5,"Python,NLP,TensorFlow,PyTorch,Computer Vision",10,100.0
+Desenvolvedor,14,Sênior,Realocar Carreira,Data Science,15,3,"Estatística,SQL,Pandas",5,100.0
+QA Tester,14,Sênior,Atualizar Carreira,Desenvolvimento Web,10,3,"JavaScript,HTML,Python",7,100.0
+Designer,6,Pleno,Atualizar Carreira,Mobile,30,5,"Swift,Android,iOS,React Native,Flutter",5,100.0
+Gerente de Projetos,4,Pleno,Realocar Carreira,UX/UI Design,25,4,"Figma,Sketch,Adobe XD,Design Thinking",10,100.0
+Analista de Dados,7,Sênior,Atualizar Carreira,Inteligência Artificial,5,5,"Computer Vision,NLP,TensorFlow,Python,PyTorch",10,100.0
+Suporte Técnico,15,Sênior,Atualizar Carreira,DevOps,20,5,"Terraform,Linux,Git,Docker,CI/CD",9,100.0
+Designer,10,Sênior,Atualizar Carreira,Mobile,5,5,"iOS,React Native,Kotlin,Flutter,Swift",10,100.0
+Desenvolvedor,17,Sênior,Atualizar Carreira,DevOps,20,4,"Git,AWS,Docker,Linux",9,100.0
+Analista de Sistemas,18,Sênior,Atualizar Carreira,Cloud Computing,15,5,"AWS,Azure,Serverless,Containers,GCP",6,100.0
+Designer,4,Pleno,Atualizar Carreira,Desenvolvimento Web,20,2,"Node.js,Python",7,100.0
+DBA,17,Sênior,Atualizar Carreira,Data Science,20,4,"Machine Learning,Pandas,R,Estatística",10,100.0
+Desenvolvedor,18,Sênior,Atualizar Carreira,Desenvolvimento Web,10,5,"Node.js,React,HTML,JavaScript,CSS",10,100.0
+DBA,10,Sênior,Atualizar Carreira,Cloud Computing,25,5,"Serverless,GCP,AWS,Containers,Azure",6,100.0
+Desenvolvedor,4,Pleno,Realocar Carreira,Mobile,5,4,"Android,iOS,React Native,Flutter",6,98.57
+Analista de Dados,19,Sênior,Atualizar Carreira,Inteligência Artificial,15,5,"Python,TensorFlow,NLP,PyTorch,Computer Vision",7,100.0
+Analista de Dados,20,Sênior,Realocar Carreira,Cloud Computing,10,4,"GCP,Containers,Azure,AWS",5,100.0
+Suporte Técnico,13,Sênior,Realocar Carreira,UX/UI Design,30,2,"Prototipagem,Sketch",9,100.0
+Analista de Sistemas,18,Sênior,Realocar Carreira,Mobile,10,4,"React Native,Swift,iOS,Android",8,100.0
+Administrador de Redes,4,Pleno,Atualizar Carreira,Segurança da Informação,20,3,"Criptografia,Pentest,Firewall",8,100.0
+Suporte Técnico,16,Sênior,Atualizar Carreira,DevOps,10,5,"AWS,Docker,Linux,CI/CD,Terraform",8,100.0
+DBA,5,Pleno,Realocar Carreira,Inteligência Artificial,20,5,"Computer Vision,Python,PyTorch,TensorFlow,NLP",5,100.0
+Administrador de Redes,9,Sênior,Atualizar Carreira,DevOps,15,2,"CI/CD,Git",8,100.0
+Analista de Dados,14,Sênior,Atualizar Carreira,Data Science,20,5,"Estatística,NumPy,Pandas,Python,SQL",5,100.0
+Gerente de Projetos,11,Sênior,Atualizar Carreira,Data Science,10,5,"Pandas,Estatística,NumPy,Python,SQL",9,100.0
+Gerente de Projetos,13,Sênior,Realocar Carreira,Cloud Computing,25,2,"AWS,Serverless",8,100.0
+QA Tester,20,Sênior,Realocar Carreira,UX/UI Design,15,5,"Figma,Design Thinking,Sketch,Adobe XD,Prototipagem",10,100.0
+QA Tester,2,Júnior,Atualizar Carreira,DevOps,20,2,"Kubernetes,Terraform",10,100.0
+Suporte Técnico,20,Sênior,Realocar Carreira,Segurança da Informação,20,2,"Criptografia,Firewall",8,100.0
+Desenvolvedor,0,Júnior,Realocar Carreira,Desenvolvimento Web,10,5,"HTML,React,Java,Python,Node.js",7,98.91
+Analista de Dados,14,Sênior,Realocar Carreira,Mobile,20,5,"Kotlin,Android,React Native,Swift,iOS",9,100.0
+Designer,17,Sênior,Atualizar Carreira,Mobile,20,4,"Android,Swift,Flutter,iOS",9,100.0
+Desenvolvedor,19,Sênior,Atualizar Carreira,Desenvolvimento Web,20,2,"Node.js,Java",8,100.0
+DBA,7,Sênior,Atualizar Carreira,Data Science,20,3,"R,Python,Machine Learning",5,100.0
+Designer,0,Júnior,Realocar Carreira,Cloud Computing,25,3,"Serverless,GCP,AWS",7,100.0
+QA Tester,2,Júnior,Realocar Carreira,Desenvolvimento Web,15,3,"Node.js,CSS,HTML",7,95.76
+Analista de Sistemas,5,Pleno,Atualizar Carreira,Desenvolvimento Web,25,5,"React,Node.js,Java,JavaScript,HTML",8,100.0
+Analista de Dados,3,Pleno,Realocar Carreira,DevOps,15,4,"AWS,Git,Kubernetes,Docker",5,100.0
+DBA,11,Sênior,Atualizar Carreira,Cloud Computing,25,5,"Serverless,Azure,Containers,AWS,GCP",8,100.0
+Administrador de Redes,12,Sênior,Atualizar Carreira,Segurança da Informação,10,3,"Firewall,Criptografia,SIEM",6,100.0
+QA Tester,18,Sênior,Realocar Carreira,DevOps,20,5,"Terraform,Kubernetes,AWS,Git,Linux",6,100.0
+Suporte Técnico,17,Sênior,Atualizar Carreira,Segurança da Informação,10,5,"Criptografia,Firewall,SIEM,OWASP,Pentest",10,100.0
+Designer,2,Júnior,Realocar Carreira,Desenvolvimento Web,20,2,"JavaScript,Java",6,98.28
+Administrador de Redes,13,Sênior,Realocar Carreira,Desenvolvimento Web,15,3,"Java,CSS,Node.js",7,100.0
+Designer,17,Sênior,Atualizar Carreira,Desenvolvimento Web,15,5,"Java,Node.js,React,HTML,Python",7,100.0
+Designer,12,Sênior,Realocar Carreira,Inteligência Artificial,5,3,"TensorFlow,PyTorch,NLP",6,100.0
+DBA,0,Júnior,Realocar Carreira,Segurança da Informação,25,5,"SIEM,Pentest,OWASP,Criptografia,Firewall",7,100.0
+Analista de Dados,8,Sênior,Atualizar Carreira,Data Science,10,3,"R,SQL,Estatística",10,100.0
+Designer,7,Sênior,Atualizar Carreira,UX/UI Design,10,3,"Prototipagem,Design Thinking,Sketch",10,100.0
+Desenvolvedor,7,Sênior,Realocar Carreira,Data Science,10,3,"NumPy,Machine Learning,SQL",10,100.0
+DBA,14,Sênior,Atualizar Carreira,Cloud Computing,20,2,"Serverless,Azure",7,100.0
+Designer,1,Júnior,Realocar Carreira,Segurança da Informação,10,5,"Firewall,Criptografia,Pentest,SIEM,OWASP",10,98.82
+Analista de Dados,13,Sênior,Realocar Carreira,Cloud Computing,15,4,"Azure,AWS,Serverless,Containers",7,100.0
+DBA,15,Sênior,Realocar Carreira,UX/UI Design,15,4,"Design Thinking,Prototipagem,Sketch,Figma",8,100.0
+Gerente de Projetos,12,Sênior,Atualizar Carreira,Cloud Computing,10,4,"AWS,Azure,GCP,Containers",8,100.0
+QA Tester,1,Júnior,Realocar Carreira,Inteligência Artificial,30,4,"NLP,TensorFlow,Computer Vision,PyTorch",8,100.0
+Analista de Dados,18,Sênior,Atualizar Carreira,Data Science,10,3,"Machine Learning,SQL,Python",9,100.0
+Analista de Dados,12,Sênior,Atualizar Carreira,Inteligência Artificial,25,2,"TensorFlow,PyTorch",10,100.0
+Analista de Sistemas,9,Sênior,Realocar Carreira,Data Science,15,2,"Python,NumPy",7,100.0
+Desenvolvedor,3,Pleno,Atualizar Carreira,Desenvolvimento Web,25,5,"Node.js,Java,CSS,React,HTML",7,100.0
+QA Tester,12,Sênior,Atualizar Carreira,Segurança da Informação,15,3,"OWASP,Firewall,SIEM",6,100.0
+Suporte Técnico,14,Sênior,Realocar Carreira,Segurança da Informação,20,3,"OWASP,Pentest,Criptografia",6,100.0
+Administrador de Redes,13,Sênior,Atualizar Carreira,Cloud Computing,10,2,"Containers,Serverless",6,100.0
+Designer,20,Sênior,Atualizar Carreira,Mobile,10,5,"Swift,Android,React Native,Kotlin,Flutter",6,100.0
+Desenvolvedor,10,Sênior,Realocar Carreira,DevOps,5,3,"Kubernetes,Git,AWS",6,91.08
+Gerente de Projetos,6,Pleno,Realocar Carreira,DevOps,15,4,"CI/CD,Kubernetes,Docker,AWS",7,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,UX/UI Design,5,3,"Sketch,Figma,Adobe XD",8,98.7
+Analista de Dados,13,Sênior,Realocar Carreira,Mobile,20,2,"React Native,Android",7,100.0
+Designer,12,Sênior,Atualizar Carreira,Mobile,25,2,"Android,iOS",6,100.0
+Gerente de Projetos,4,Pleno,Realocar Carreira,UX/UI Design,15,3,"Figma,Design Thinking,Adobe XD",9,100.0
+Gerente de Projetos,3,Pleno,Realocar Carreira,Cloud Computing,10,4,"AWS,Serverless,Azure,Containers",8,100.0
+Suporte Técnico,8,Sênior,Realocar Carreira,UX/UI Design,10,3,"Design Thinking,Prototipagem,Adobe XD",8,100.0
+Analista de Sistemas,11,Sênior,Realocar Carreira,Desenvolvimento Web,10,4,"HTML,Java,Python,Node.js",7,100.0
+Designer,18,Sênior,Atualizar Carreira,Mobile,15,3,"Swift,iOS,React Native",10,100.0
+Designer,6,Pleno,Realocar Carreira,Inteligência Artificial,20,4,"Python,TensorFlow,PyTorch,NLP",6,100.0
+Desenvolvedor,10,Sênior,Atualizar Carreira,Desenvolvimento Web,20,3,"Node.js,HTML,Java",6,100.0
+QA Tester,10,Sênior,Realocar Carreira,Data Science,25,3,"Pandas,SQL,Estatística",8,100.0
+DBA,9,Sênior,Realocar Carreira,Inteligência Artificial,20,3,"PyTorch,NLP,Python",5,100.0
+Analista de Sistemas,19,Sênior,Realocar Carreira,Desenvolvimento Web,30,5,"JavaScript,Node.js,Python,React,Java",6,100.0
+DBA,3,Pleno,Realocar Carreira,Data Science,20,3,"NumPy,SQL,Pandas",9,100.0
+Designer,9,Sênior,Atualizar Carreira,Desenvolvimento Web,20,3,"Node.js,JavaScript,CSS",9,100.0
+Suporte Técnico,0,Júnior,Atualizar Carreira,Cloud Computing,10,5,"Azure,AWS,Serverless,GCP,Containers",8,100.0
+DBA,20,Sênior,Realocar Carreira,Cloud Computing,5,3,"Azure,GCP,AWS",10,100.0
+Suporte Técnico,4,Pleno,Atualizar Carreira,Segurança da Informação,10,4,"OWASP,Firewall,Criptografia,SIEM",5,93.82
+Gerente de Projetos,18,Sênior,Realocar Carreira,Inteligência Artificial,25,4,"TensorFlow,Computer Vision,Python,PyTorch",9,100.0
+Designer,1,Júnior,Realocar Carreira,Desenvolvimento Web,15,2,"HTML,CSS",7,88.01
+QA Tester,15,Sênior,Atualizar Carreira,Segurança da Informação,20,3,"OWASP,Firewall,Pentest",6,100.0
+QA Tester,15,Sênior,Realocar Carreira,Mobile,10,4,"Swift,Flutter,React Native,Android",5,100.0
+Suporte Técnico,6,Pleno,Realocar Carreira,DevOps,20,2,"Git,Kubernetes",8,100.0
+QA Tester,10,Sênior,Realocar Carreira,Inteligência Artificial,30,5,"NLP,Python,Computer Vision,TensorFlow,PyTorch",9,100.0
+Suporte Técnico,8,Sênior,Atualizar Carreira,Segurança da Informação,30,4,"SIEM,Pentest,Firewall,OWASP",7,100.0
+Suporte Técnico,5,Pleno,Realocar Carreira,Data Science,10,4,"Pandas,R,Python,Estatística",5,96.82
+Gerente de Projetos,11,Sênior,Realocar Carreira,DevOps,25,2,"Kubernetes,CI/CD",10,100.0
+Gerente de Projetos,6,Pleno,Realocar Carreira,UX/UI Design,10,5,"Design Thinking,Adobe XD,Figma,Prototipagem,Sketch",5,100.0
+Desenvolvedor,18,Sênior,Realocar Carreira,Segurança da Informação,5,5,"SIEM,Firewall,OWASP,Criptografia,Pentest",8,100.0
+Gerente de Projetos,18,Sênior,Realocar Carreira,Cloud Computing,20,3,"AWS,GCP,Containers",5,100.0
+Analista de Dados,9,Sênior,Atualizar Carreira,Inteligência Artificial,10,3,"NLP,Computer Vision,PyTorch",9,100.0
+Suporte Técnico,1,Júnior,Atualizar Carreira,Segurança da Informação,20,5,"SIEM,Firewall,OWASP,Criptografia,Pentest",5,100.0
+DBA,2,Júnior,Realocar Carreira,DevOps,10,5,"AWS,Docker,Kubernetes,Linux,Terraform",6,99.93
+Designer,3,Pleno,Realocar Carreira,Inteligência Artificial,15,5,"Computer Vision,PyTorch,TensorFlow,NLP,Python",10,100.0
+Analista de Sistemas,10,Sênior,Atualizar Carreira,Data Science,15,3,"Pandas,Machine Learning,R",6,100.0
+DBA,7,Sênior,Realocar Carreira,UX/UI Design,15,3,"Sketch,Design Thinking,Figma",5,100.0
+Designer,9,Sênior,Atualizar Carreira,Desenvolvimento Web,5,2,"CSS,Java",7,100.0
+Analista de Dados,19,Sênior,Realocar Carreira,Segurança da Informação,10,4,"SIEM,Pentest,Firewall,OWASP",6,100.0
+Suporte Técnico,0,Júnior,Realocar Carreira,Mobile,15,2,"React Native,Android",6,92.55
+Analista de Dados,15,Sênior,Atualizar Carreira,Cloud Computing,20,2,"Serverless,GCP",9,100.0
+Designer,4,Pleno,Realocar Carreira,Data Science,15,3,"R,Python,Machine Learning",6,100.0
+Gerente de Projetos,5,Pleno,Realocar Carreira,DevOps,25,5,"Terraform,Docker,AWS,CI/CD,Linux",7,100.0
+DBA,12,Sênior,Realocar Carreira,UX/UI Design,30,2,"Prototipagem,Sketch",5,100.0
+DBA,9,Sênior,Realocar Carreira,Desenvolvimento Web,25,2,"JavaScript,Java",8,100.0
+Gerente de Projetos,10,Sênior,Atualizar Carreira,Data Science,5,3,"Python,NumPy,Pandas",5,100.0
+Administrador de Redes,14,Sênior,Realocar Carreira,Mobile,15,5,"Android,Kotlin,Swift,Flutter,React Native",10,100.0
+DBA,15,Sênior,Realocar Carreira,Segurança da Informação,15,2,"SIEM,Criptografia",6,100.0
+Analista de Sistemas,17,Sênior,Atualizar Carreira,Cloud Computing,20,4,"AWS,GCP,Serverless,Azure",10,100.0
+DBA,12,Sênior,Realocar Carreira,DevOps,20,3,"Docker,Linux,AWS",8,100.0
+Desenvolvedor,19,Sênior,Atualizar Carreira,DevOps,10,4,"Docker,CI/CD,Git,Kubernetes",8,100.0
+QA Tester,15,Sênior,Realocar Carreira,Segurança da Informação,5,4,"Firewall,Criptografia,Pentest,OWASP",5,97.69
+Analista de Dados,10,Sênior,Realocar Carreira,UX/UI Design,15,4,"Adobe XD,Sketch,Design Thinking,Prototipagem",7,100.0
+Analista de Sistemas,12,Sênior,Realocar Carreira,Cloud Computing,5,3,"AWS,Containers,GCP",7,100.0
+DBA,20,Sênior,Atualizar Carreira,Data Science,15,5,"SQL,R,Python,Machine Learning,NumPy",5,100.0
+Administrador de Redes,1,Júnior,Realocar Carreira,Desenvolvimento Web,15,2,"HTML,React",7,91.65
+Analista de Sistemas,18,Sênior,Atualizar Carreira,Desenvolvimento Web,10,4,"CSS,JavaScript,Node.js,Java",8,100.0
+Analista de Sistemas,10,Sênior,Atualizar Carreira,Data Science,20,4,"Estatística,R,Machine Learning,Pandas",7,100.0
+Analista de Dados,7,Sênior,Realocar Carreira,Desenvolvimento Web,15,3,"Python,Java,JavaScript",6,100.0
+Administrador de Redes,9,Sênior,Realocar Carreira,Mobile,5,2,"Flutter,Android",5,89.73
+QA Tester,14,Sênior,Realocar Carreira,UX/UI Design,15,5,"Design Thinking,Figma,Prototipagem,Sketch,Adobe XD",9,100.0
+Administrador de Redes,3,Pleno,Atualizar Carreira,Segurança da Informação,10,2,"OWASP,Pentest",9,100.0
+Suporte Técnico,8,Sênior,Realocar Carreira,Segurança da Informação,15,4,"Firewall,OWASP,Pentest,Criptografia",6,100.0
+Designer,18,Sênior,Atualizar Carreira,UX/UI Design,10,5,"Adobe XD,Prototipagem,Figma,Sketch,Design Thinking",6,100.0
+Analista de Dados,9,Sênior,Realocar Carreira,Data Science,10,4,"NumPy,Python,R,SQL",8,100.0
+DBA,18,Sênior,Atualizar Carreira,DevOps,20,4,"AWS,Linux,Kubernetes,Git",10,100.0
+Gerente de Projetos,14,Sênior,Realocar Carreira,Inteligência Artificial,5,5,"Computer Vision,Python,TensorFlow,PyTorch,NLP",9,100.0
+Analista de Dados,12,Sênior,Atualizar Carreira,Inteligência Artificial,10,3,"NLP,Python,Computer Vision",10,100.0
+QA Tester,10,Sênior,Realocar Carreira,Mobile,20,3,"iOS,Kotlin,React Native",10,100.0
+QA Tester,7,Sênior,Atualizar Carreira,Desenvolvimento Web,25,2,"Python,React",7,100.0
+Analista de Dados,7,Sênior,Atualizar Carreira,Cloud Computing,10,4,"Azure,Containers,AWS,GCP",7,100.0
+Designer,9,Sênior,Atualizar Carreira,Mobile,20,2,"Kotlin,Flutter",7,100.0
+Desenvolvedor,19,Sênior,Realocar Carreira,Mobile,10,3,"React Native,Android,Kotlin",7,100.0
+Analista de Sistemas,14,Sênior,Atualizar Carreira,Cloud Computing,10,4,"Serverless,GCP,Azure,AWS",9,100.0
+Administrador de Redes,14,Sênior,Realocar Carreira,Data Science,15,2,"Pandas,SQL",7,100.0
+Desenvolvedor,1,Júnior,Realocar Carreira,Desenvolvimento Web,15,2,"JavaScript,Java",9,98.7
+Desenvolvedor,16,Sênior,Realocar Carreira,Cloud Computing,20,2,"GCP,AWS",5,100.0
+Designer,4,Pleno,Atualizar Carreira,Mobile,5,5,"Swift,Kotlin,iOS,Flutter,Android",5,100.0
+Analista de Dados,1,Júnior,Atualizar Carreira,Cloud Computing,5,3,"Azure,Serverless,Containers",8,100.0
+Analista de Sistemas,3,Pleno,Realocar Carreira,DevOps,20,5,"Terraform,CI/CD,Git,AWS,Linux",6,100.0
+Gerente de Projetos,17,Sênior,Realocar Carreira,UX/UI Design,20,2,"Design Thinking,Prototipagem",10,100.0
+Analista de Sistemas,18,Sênior,Realocar Carreira,DevOps,20,3,"CI/CD,Linux,AWS",8,100.0
+Administrador de Redes,13,Sênior,Realocar Carreira,Mobile,30,5,"React Native,Flutter,iOS,Android,Kotlin",5,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,Cloud Computing,10,3,"Containers,Azure,Serverless",10,100.0
+Administrador de Redes,18,Sênior,Realocar Carreira,Desenvolvimento Web,30,5,"JavaScript,Node.js,React,Python,HTML",5,100.0
+DBA,14,Sênior,Realocar Carreira,Inteligência Artificial,10,2,"Python,Computer Vision",9,100.0
+Gerente de Projetos,15,Sênior,Realocar Carreira,Inteligência Artificial,10,5,"Computer Vision,Python,PyTorch,NLP,TensorFlow",5,100.0
+Designer,6,Pleno,Realocar Carreira,Cloud Computing,25,2,"AWS,GCP",7,100.0
+Designer,16,Sênior,Atualizar Carreira,Desenvolvimento Web,20,5,"JavaScript,Java,React,CSS,Node.js",6,100.0
+Desenvolvedor,5,Pleno,Realocar Carreira,Data Science,10,4,"NumPy,Estatística,Pandas,Python",9,100.0
+Analista de Dados,0,Júnior,Atualizar Carreira,Inteligência Artificial,15,4,"NLP,TensorFlow,Python,Computer Vision",5,100.0
+Administrador de Redes,8,Sênior,Atualizar Carreira,Segurança da Informação,20,4,"SIEM,Pentest,Firewall,Criptografia",5,100.0
+Analista de Dados,5,Pleno,Atualizar Carreira,Inteligência Artificial,15,5,"NLP,PyTorch,Python,TensorFlow,Computer Vision",6,100.0
+QA Tester,18,Sênior,Atualizar Carreira,DevOps,15,3,"Git,AWS,Kubernetes",6,100.0
+Analista de Dados,17,Sênior,Realocar Carreira,Desenvolvimento Web,20,3,"React,Node.js,Python",9,100.0
+Designer,15,Sênior,Realocar Carreira,UX/UI Design,15,3,"Adobe XD,Sketch,Design Thinking",6,100.0
+Suporte Técnico,8,Sênior,Atualizar Carreira,DevOps,15,3,"Terraform,Linux,Git",9,100.0
+Desenvolvedor,9,Sênior,Realocar Carreira,Inteligência Artificial,15,2,"PyTorch,Computer Vision",5,100.0
+Administrador de Redes,14,Sênior,Realocar Carreira,DevOps,15,2,"Terraform,Docker",6,100.0
+Desenvolvedor,13,Sênior,Realocar Carreira,UX/UI Design,10,2,"Design Thinking,Prototipagem",5,90.07
+Desenvolvedor,2,Júnior,Atualizar Carreira,DevOps,30,5,"CI/CD,Kubernetes,Docker,Git,Linux",10,100.0
+Desenvolvedor,0,Júnior,Realocar Carreira,Segurança da Informação,20,3,"Pentest,Firewall,OWASP",8,100.0
+Analista de Dados,10,Sênior,Realocar Carreira,Desenvolvimento Web,15,4,"Java,Node.js,CSS,HTML",6,100.0
+Desenvolvedor,13,Sênior,Atualizar Carreira,Desenvolvimento Web,20,5,"JavaScript,Node.js,HTML,Java,React",8,100.0
+Analista de Sistemas,16,Sênior,Realocar Carreira,DevOps,25,4,"Docker,AWS,CI/CD,Terraform",8,100.0
+Gerente de Projetos,13,Sênior,Realocar Carreira,Mobile,10,5,"Android,React Native,iOS,Flutter,Swift",7,100.0
+Gerente de Projetos,18,Sênior,Realocar Carreira,UX/UI Design,5,5,"Adobe XD,Design Thinking,Prototipagem,Figma,Sketch",7,100.0
+Analista de Dados,4,Pleno,Atualizar Carreira,Data Science,20,2,"Estatística,SQL",7,100.0
+Analista de Dados,2,Júnior,Atualizar Carreira,Inteligência Artificial,20,3,"Python,Computer Vision,TensorFlow",5,100.0
+Desenvolvedor,9,Sênior,Realocar Carreira,Segurança da Informação,20,2,"SIEM,Pentest",6,100.0
+Analista de Sistemas,3,Pleno,Atualizar Carreira,Data Science,10,3,"NumPy,Python,Machine Learning",5,99.42
+Administrador de Redes,11,Sênior,Realocar Carreira,Data Science,15,2,"SQL,Pandas",8,100.0
+Designer,17,Sênior,Atualizar Carreira,Desenvolvimento Web,5,5,"Node.js,JavaScript,React,CSS,Python",10,100.0
+Gerente de Projetos,11,Sênior,Realocar Carreira,Cloud Computing,5,3,"Containers,Serverless,Azure",7,100.0
+DBA,6,Pleno,Realocar Carreira,Data Science,5,2,"Python,Pandas",5,91.77
+Administrador de Redes,19,Sênior,Realocar Carreira,Data Science,15,5,"Machine Learning,SQL,R,NumPy,Python",5,100.0
+Analista de Sistemas,18,Sênior,Realocar Carreira,Data Science,15,5,"SQL,NumPy,R,Python,Machine Learning",8,100.0
+Analista de Sistemas,16,Sênior,Atualizar Carreira,Desenvolvimento Web,20,5,"Python,Java,Node.js,JavaScript,CSS",10,100.0
+Desenvolvedor,15,Sênior,Realocar Carreira,Data Science,5,5,"Pandas,SQL,Machine Learning,NumPy,Estatística",9,100.0
+QA Tester,18,Sênior,Atualizar Carreira,Segurança da Informação,10,4,"Pentest,SIEM,Criptografia,OWASP",8,100.0
+Analista de Sistemas,11,Sênior,Realocar Carreira,Cloud Computing,25,5,"AWS,Azure,GCP,Containers,Serverless",10,100.0
+Designer,8,Sênior,Realocar Carreira,DevOps,25,2,"Git,Linux",8,100.0
+Suporte Técnico,15,Sênior,Atualizar Carreira,DevOps,10,5,"Git,Linux,Docker,CI/CD,Terraform",9,100.0
+Desenvolvedor,12,Sênior,Atualizar Carreira,Desenvolvimento Web,10,5,"CSS,HTML,JavaScript,Java,React",6,100.0
+Desenvolvedor,4,Pleno,Realocar Carreira,Mobile,15,5,"Flutter,React Native,Swift,Android,Kotlin",6,100.0
+Analista de Sistemas,13,Sênior,Atualizar Carreira,Data Science,15,3,"Machine Learning,NumPy,Python",5,100.0
+Designer,5,Pleno,Realocar Carreira,Segurança da Informação,10,5,"Pentest,SIEM,OWASP,Criptografia,Firewall",8,100.0
+Analista de Sistemas,11,Sênior,Atualizar Carreira,Cloud Computing,20,2,"AWS,Containers",5,100.0
+Administrador de Redes,3,Pleno,Realocar Carreira,Data Science,20,3,"SQL,Python,Pandas",6,100.0
+DBA,16,Sênior,Realocar Carreira,Data Science,20,3,"R,Estatística,SQL",8,100.0
+Analista de Dados,7,Sênior,Atualizar Carreira,Cloud Computing,15,5,"Serverless,AWS,Azure,Containers,GCP",5,100.0
+Administrador de Redes,15,Sênior,Atualizar Carreira,Segurança da Informação,15,5,"Pentest,SIEM,Criptografia,OWASP,Firewall",5,100.0
+DBA,20,Sênior,Atualizar Carreira,DevOps,10,3,"Kubernetes,CI/CD,Docker",5,100.0
+Designer,17,Sênior,Atualizar Carreira,Desenvolvimento Web,20,3,"CSS,HTML,JavaScript",8,100.0
+Analista de Sistemas,3,Pleno,Atualizar Carreira,Cloud Computing,30,3,"Azure,Serverless,GCP",6,100.0
+Gerente de Projetos,9,Sênior,Realocar Carreira,Inteligência Artificial,5,5,"TensorFlow,PyTorch,Computer Vision,NLP,Python",10,100.0
+Gerente de Projetos,7,Sênior,Realocar Carreira,DevOps,20,2,"Linux,CI/CD",5,100.0
+Gerente de Projetos,3,Pleno,Atualizar Carreira,Data Science,15,2,"Python,SQL",5,99.98
+Desenvolvedor,18,Sênior,Atualizar Carreira,DevOps,20,4,"Linux,Kubernetes,AWS,Terraform",9,100.0
+Suporte Técnico,19,Sênior,Realocar Carreira,Data Science,15,4,"R,Estatística,Machine Learning,Python",5,100.0
+Analista de Sistemas,14,Sênior,Realocar Carreira,Mobile,20,2,"Kotlin,React Native",5,100.0
+Suporte Técnico,6,Pleno,Realocar Carreira,Mobile,30,2,"Flutter,Swift",8,100.0
+Administrador de Redes,17,Sênior,Atualizar Carreira,Cloud Computing,15,5,"Azure,AWS,Serverless,Containers,GCP",5,100.0
+Administrador de Redes,14,Sênior,Atualizar Carreira,DevOps,15,4,"Kubernetes,Git,Docker,Terraform",5,100.0
+Gerente de Projetos,6,Pleno,Realocar Carreira,Segurança da Informação,5,5,"SIEM,Pentest,Firewall,Criptografia,OWASP",9,100.0
+DBA,17,Sênior,Realocar Carreira,Segurança da Informação,20,5,"Criptografia,Pentest,SIEM,Firewall,OWASP",5,100.0
+QA Tester,18,Sênior,Realocar Carreira,Segurança da Informação,15,5,"Criptografia,OWASP,Pentest,SIEM,Firewall",8,100.0
+Gerente de Projetos,1,Júnior,Realocar Carreira,Inteligência Artificial,20,3,"TensorFlow,Computer Vision,Python",5,95.66
+Desenvolvedor,1,Júnior,Realocar Carreira,Segurança da Informação,5,4,"OWASP,Pentest,SIEM,Criptografia",6,95.57
+Analista de Sistemas,5,Pleno,Realocar Carreira,Data Science,10,3,"NumPy,SQL,Estatística",7,100.0
+QA Tester,18,Sênior,Realocar Carreira,UX/UI Design,15,4,"Figma,Sketch,Adobe XD,Design Thinking",6,100.0
+DBA,6,Pleno,Realocar Carreira,Segurança da Informação,20,5,"SIEM,Firewall,Criptografia,Pentest,OWASP",7,100.0
+Administrador de Redes,3,Pleno,Realocar Carreira,Inteligência Artificial,15,4,"PyTorch,TensorFlow,Computer Vision,Python",10,100.0
+Gerente de Projetos,13,Sênior,Atualizar Carreira,DevOps,5,2,"Terraform,CI/CD",8,100.0
+Analista de Dados,14,Sênior,Atualizar Carreira,Inteligência Artificial,30,2,"TensorFlow,Python",5,100.0
+DBA,20,Sênior,Realocar Carreira,Desenvolvimento Web,20,5,"Java,CSS,HTML,React,Python",7,100.0
+Suporte Técnico,9,Sênior,Realocar Carreira,Inteligência Artificial,5,2,"PyTorch,Python",8,100.0
+Analista de Sistemas,1,Júnior,Realocar Carreira,Mobile,10,2,"Kotlin,iOS",7,80.58
+Administrador de Redes,19,Sênior,Realocar Carreira,Desenvolvimento Web,20,2,"JavaScript,Node.js",9,100.0
+Analista de Sistemas,6,Pleno,Atualizar Carreira,Desenvolvimento Web,25,4,"React,HTML,Node.js,JavaScript",5,100.0
+Analista de Sistemas,1,Júnior,Realocar Carreira,Desenvolvimento Web,10,2,"Python,CSS",9,87.58
+Analista de Dados,12,Sênior,Realocar Carreira,UX/UI Design,10,2,"Prototipagem,Sketch",6,100.0
+Analista de Dados,18,Sênior,Atualizar Carreira,Cloud Computing,20,2,"Containers,Azure",6,100.0
+Desenvolvedor,10,Sênior,Atualizar Carreira,DevOps,15,3,"Terraform,Docker,Kubernetes",5,100.0
+Desenvolvedor,6,Pleno,Atualizar Carreira,Mobile,15,4,"React Native,iOS,Kotlin,Android",9,100.0
+Designer,9,Sênior,Atualizar Carreira,Desenvolvimento Web,15,2,"JavaScript,HTML",5,100.0
+Designer,2,Júnior,Realocar Carreira,UX/UI Design,20,3,"Sketch,Prototipagem,Figma",7,97.99
+Desenvolvedor,15,Sênior,Realocar Carreira,DevOps,25,4,"Terraform,Docker,Linux,Kubernetes",10,100.0
+Administrador de Redes,5,Pleno,Atualizar Carreira,DevOps,15,5,"Linux,Docker,Git,Kubernetes,CI/CD",8,100.0
+Analista de Sistemas,7,Sênior,Realocar Carreira,Inteligência Artificial,15,3,"PyTorch,NLP,Python",8,100.0
+Analista de Dados,6,Pleno,Realocar Carreira,UX/UI Design,5,5,"Adobe XD,Sketch,Design Thinking,Figma,Prototipagem",5,96.02
+QA Tester,12,Sênior,Realocar Carreira,Mobile,15,4,"React Native,Kotlin,Swift,Flutter",8,100.0
+Administrador de Redes,1,Júnior,Atualizar Carreira,Segurança da Informação,30,3,"Criptografia,SIEM,Pentest",9,100.0
+Gerente de Projetos,2,Júnior,Realocar Carreira,Segurança da Informação,20,3,"Pentest,Firewall,Criptografia",8,100.0
+Suporte Técnico,15,Sênior,Atualizar Carreira,DevOps,15,2,"Terraform,Kubernetes",7,100.0
+Desenvolvedor,11,Sênior,Realocar Carreira,Data Science,20,5,"NumPy,Estatística,R,Pandas,Python",5,100.0
+Suporte Técnico,18,Sênior,Realocar Carreira,DevOps,10,4,"CI/CD,AWS,Linux,Terraform",7,100.0
+QA Tester,6,Pleno,Realocar Carreira,Desenvolvimento Web,25,2,"Node.js,Python",8,100.0
+Desenvolvedor,12,Sênior,Realocar Carreira,DevOps,15,3,"CI/CD,AWS,Kubernetes",5,100.0
+QA Tester,4,Pleno,Realocar Carreira,DevOps,20,2,"CI/CD,Kubernetes",6,100.0
+Designer,1,Júnior,Realocar Carreira,Mobile,20,4,"Swift,iOS,Kotlin,React Native",8,99.61
+Administrador de Redes,18,Sênior,Realocar Carreira,Desenvolvimento Web,10,5,"React,CSS,Node.js,HTML,JavaScript",6,100.0
+Administrador de Redes,18,Sênior,Atualizar Carreira,DevOps,20,5,"Kubernetes,Terraform,Docker,CI/CD,Git",6,100.0
+Desenvolvedor,9,Sênior,Atualizar Carreira,Mobile,20,2,"Swift,Android",5,100.0
+Suporte Técnico,9,Sênior,Atualizar Carreira,DevOps,5,4,"Docker,Linux,Kubernetes,AWS",6,100.0
+Analista de Sistemas,5,Pleno,Atualizar Carreira,Data Science,5,2,"NumPy,Python",8,100.0
+Designer,1,Júnior,Realocar Carreira,Cloud Computing,15,3,"Containers,Serverless,GCP",6,92.41
+QA Tester,11,Sênior,Realocar Carreira,UX/UI Design,5,3,"Figma,Design Thinking,Sketch",8,97.8
+QA Tester,11,Sênior,Atualizar Carreira,DevOps,5,3,"Git,AWS,Kubernetes",6,100.0
+Designer,12,Sênior,Realocar Carreira,Mobile,20,5,"iOS,Kotlin,Android,Flutter,React Native",10,100.0
+Administrador de Redes,2,Júnior,Atualizar Carreira,DevOps,15,5,"CI/CD,AWS,Terraform,Linux,Git",6,100.0
+Analista de Dados,10,Sênior,Atualizar Carreira,Inteligência Artificial,10,5,"PyTorch,Python,Computer Vision,TensorFlow,NLP",7,100.0
+Analista de Sistemas,7,Sênior,Realocar Carreira,Desenvolvimento Web,10,5,"Java,CSS,React,Python,Node.js",7,100.0
+QA Tester,7,Sênior,Realocar Carreira,Data Science,20,5,"R,Machine Learning,Estatística,Pandas,SQL",6,100.0
+Designer,9,Sênior,Atualizar Carreira,Desenvolvimento Web,15,4,"CSS,Java,Python,JavaScript",7,100.0
+Analista de Sistemas,17,Sênior,Realocar Carreira,Data Science,15,4,"Machine Learning,SQL,Pandas,Estatística",5,100.0
+Analista de Dados,16,Sênior,Realocar Carreira,Data Science,25,3,"Python,Estatística,Machine Learning",10,100.0
+Analista de Dados,18,Sênior,Realocar Carreira,Inteligência Artificial,5,2,"PyTorch,NLP",7,98.65
+Analista de Sistemas,12,Sênior,Atualizar Carreira,Data Science,10,4,"Python,Machine Learning,Estatística,Pandas",5,100.0
+QA Tester,18,Sênior,Realocar Carreira,Desenvolvimento Web,10,2,"React,Python",7,100.0
+DBA,4,Pleno,Realocar Carreira,Mobile,30,3,"Kotlin,React Native,Flutter",8,100.0
+Administrador de Redes,9,Sênior,Realocar Carreira,Data Science,10,5,"Machine Learning,Python,NumPy,Estatística,Pandas",6,100.0
+Administrador de Redes,17,Sênior,Atualizar Carreira,DevOps,20,2,"Docker,Linux",8,100.0
+Desenvolvedor,3,Pleno,Atualizar Carreira,Mobile,25,5,"React Native,Swift,Android,iOS,Flutter",10,100.0
+DBA,1,Júnior,Atualizar Carreira,DevOps,20,2,"Kubernetes,Docker",5,95.94
+DBA,1,Júnior,Realocar Carreira,DevOps,5,2,"Terraform,CI/CD",9,92.16
+Analista de Sistemas,19,Sênior,Realocar Carreira,Desenvolvimento Web,20,3,"CSS,Node.js,React",9,100.0
+QA Tester,12,Sênior,Atualizar Carreira,DevOps,5,4,"CI/CD,Docker,Git,Kubernetes",9,100.0
+DBA,4,Pleno,Atualizar Carreira,Data Science,10,3,"Estatística,SQL,Python",6,100.0
+Administrador de Redes,6,Pleno,Realocar Carreira,Inteligência Artificial,20,5,"PyTorch,Computer Vision,TensorFlow,Python,NLP",6,100.0
+Suporte Técnico,17,Sênior,Realocar Carreira,UX/UI Design,10,2,"Sketch,Figma",6,100.0
+Suporte Técnico,6,Pleno,Realocar Carreira,Mobile,10,4,"Android,Kotlin,Swift,React Native",10,100.0
+Desenvolvedor,20,Sênior,Realocar Carreira,DevOps,30,3,"Terraform,Kubernetes,Git",9,100.0
+Analista de Dados,17,Sênior,Realocar Carreira,Desenvolvimento Web,20,3,"React,JavaScript,Python",7,100.0
+Suporte Técnico,1,Júnior,Realocar Carreira,Data Science,10,2,"Pandas,Estatística",5,88.05
+Analista de Dados,15,Sênior,Realocar Carreira,Data Science,10,3,"Pandas,NumPy,R",8,100.0
+DBA,5,Pleno,Realocar Carreira,Desenvolvimento Web,10,5,"Python,HTML,CSS,React,JavaScript",5,99.69
+Designer,0,Júnior,Realocar Carreira,Data Science,15,2,"Pandas,Machine Learning",6,83.68
+Desenvolvedor,9,Sênior,Realocar Carreira,Mobile,5,5,"Kotlin,Flutter,iOS,React Native,Swift",8,100.0
+Analista de Sistemas,17,Sênior,Atualizar Carreira,Desenvolvimento Web,20,5,"HTML,Java,JavaScript,Node.js,CSS",9,100.0
+Desenvolvedor,10,Sênior,Atualizar Carreira,Mobile,15,5,"Flutter,Kotlin,iOS,React Native,Android",6,100.0
+Analista de Sistemas,10,Sênior,Atualizar Carreira,Data Science,25,4,"Machine Learning,Python,Pandas,Estatística",9,100.0
+Gerente de Projetos,17,Sênior,Realocar Carreira,Desenvolvimento Web,25,4,"Python,CSS,Node.js,HTML",8,100.0
+Analista de Dados,10,Sênior,Realocar Carreira,Data Science,20,4,"SQL,Python,R,NumPy",9,100.0
+Designer,2,Júnior,Atualizar Carreira,Desenvolvimento Web,5,4,"Python,React,CSS,Node.js",10,100.0
+QA Tester,13,Sênior,Atualizar Carreira,DevOps,15,4,"Terraform,Kubernetes,CI/CD,Linux",8,100.0
+Gerente de Projetos,13,Sênior,Realocar Carreira,Segurança da Informação,10,5,"Pentest,Criptografia,OWASP,Firewall,SIEM",7,100.0
+Analista de Sistemas,0,Júnior,Atualizar Carreira,Desenvolvimento Web,30,5,"HTML,Java,Python,JavaScript,CSS",7,100.0
+Gerente de Projetos,7,Sênior,Realocar Carreira,Inteligência Artificial,10,5,"PyTorch,TensorFlow,NLP,Python,Computer Vision",10,100.0
+Analista de Dados,7,Sênior,Realocar Carreira,Data Science,10,3,"Estatística,Python,R",6,100.0
+Designer,5,Pleno,Realocar Carreira,Cloud Computing,15,3,"AWS,Azure,Containers",7,93.95
+Analista de Dados,6,Pleno,Atualizar Carreira,Inteligência Artificial,10,4,"NLP,Computer Vision,PyTorch,Python",5,100.0
+Administrador de Redes,19,Sênior,Realocar Carreira,Cloud Computing,10,4,"Containers,AWS,Serverless,GCP",8,100.0
+Desenvolvedor,20,Sênior,Atualizar Carreira,DevOps,25,4,"Terraform,Linux,Git,CI/CD",10,100.0
+Analista de Sistemas,11,Sênior,Atualizar Carreira,Data Science,15,3,"Pandas,SQL,Python",10,100.0
+DBA,11,Sênior,Atualizar Carreira,DevOps,5,5,"Linux,CI/CD,Kubernetes,Git,AWS",5,100.0
+Analista de Sistemas,2,Júnior,Atualizar Carreira,Desenvolvimento Web,30,3,"Java,Node.js,Python",6,100.0
+Gerente de Projetos,13,Sênior,Atualizar Carreira,Data Science,15,2,"Python,Machine Learning",8,100.0
+Desenvolvedor,8,Sênior,Atualizar Carreira,Desenvolvimento Web,15,3,"React,HTML,JavaScript",9,100.0
+Suporte Técnico,0,Júnior,Realocar Carreira,Segurança da Informação,15,2,"OWASP,Firewall",8,92.44
+Gerente de Projetos,10,Sênior,Realocar Carreira,UX/UI Design,10,4,"Prototipagem,Sketch,Adobe XD,Design Thinking",9,100.0
+DBA,11,Sênior,Realocar Carreira,Mobile,20,4,"React Native,Flutter,Swift,Android",9,100.0
+Analista de Dados,6,Pleno,Realocar Carreira,Cloud Computing,20,3,"Containers,GCP,AWS",6,100.0
+Analista de Dados,12,Sênior,Realocar Carreira,Desenvolvimento Web,15,2,"React,HTML",5,100.0
+Analista de Dados,8,Sênior,Atualizar Carreira,Inteligência Artificial,10,2,"TensorFlow,NLP",6,100.0
+Gerente de Projetos,10,Sênior,Atualizar Carreira,Data Science,5,4,"Machine Learning,Estatística,Python,R",9,100.0
+Desenvolvedor,7,Sênior,Atualizar Carreira,Desenvolvimento Web,20,3,"HTML,CSS,Node.js",6,100.0
+Analista de Sistemas,16,Sênior,Atualizar Carreira,Desenvolvimento Web,20,5,"JavaScript,CSS,React,HTML,Node.js",6,100.0
+Administrador de Redes,16,Sênior,Realocar Carreira,Inteligência Artificial,15,2,"Python,NLP",8,100.0
+Suporte Técnico,10,Sênior,Realocar Carreira,Segurança da Informação,15,2,"Criptografia,Firewall",10,100.0
+DBA,10,Sênior,Realocar Carreira,UX/UI Design,20,4,"Adobe XD,Prototipagem,Sketch,Figma",6,100.0
+Gerente de Projetos,15,Sênior,Realocar Carreira,Inteligência Artificial,10,5,"NLP,Python,Computer Vision,TensorFlow,PyTorch",6,100.0
+Analista de Sistemas,11,Sênior,Realocar Carreira,Data Science,15,3,"R,Machine Learning,SQL",10,100.0
+Analista de Sistemas,19,Sênior,Atualizar Carreira,Data Science,25,3,"Estatística,Pandas,NumPy",10,100.0
+Gerente de Projetos,5,Pleno,Atualizar Carreira,Cloud Computing,20,5,"Serverless,GCP,Azure,AWS,Containers",9,100.0
+QA Tester,7,Sênior,Atualizar Carreira,DevOps,20,4,"AWS,Docker,CI/CD,Linux",5,100.0
+Analista de Dados,6,Pleno,Realocar Carreira,Mobile,15,5,"Swift,Android,Kotlin,iOS,Flutter",5,100.0
+DBA,6,Pleno,Realocar Carreira,Mobile,20,5,"Flutter,Swift,Android,React Native,iOS",7,100.0
+Desenvolvedor,15,Sênior,Atualizar Carreira,DevOps,5,2,"Git,Docker",7,100.0
+Analista de Dados,1,Júnior,Atualizar Carreira,Data Science,20,5,"SQL,R,Machine Learning,Python,Pandas",8,100.0
+Designer,12,Sênior,Realocar Carreira,Segurança da Informação,10,3,"Firewall,Pentest,Criptografia",7,100.0
+Analista de Dados,5,Pleno,Atualizar Carreira,Inteligência Artificial,30,2,"PyTorch,NLP",5,100.0
+Gerente de Projetos,18,Sênior,Realocar Carreira,Mobile,20,2,"Swift,Flutter",7,100.0
+Administrador de Redes,17,Sênior,Atualizar Carreira,Segurança da Informação,15,3,"Criptografia,OWASP,Pentest",9,100.0
+Analista de Dados,1,Júnior,Atualizar Carreira,Inteligência Artificial,20,2,"NLP,TensorFlow",8,100.0
+DBA,0,Júnior,Atualizar Carreira,Data Science,30,3,"R,Python,SQL",7,100.0
+Desenvolvedor,13,Sênior,Realocar Carreira,Desenvolvimento Web,10,2,"CSS,Python",5,95.94
+Desenvolvedor,2,Júnior,Realocar Carreira,UX/UI Design,15,5,"Prototipagem,Adobe XD,Design Thinking,Figma,Sketch",6,100.0
+DBA,3,Pleno,Atualizar Carreira,DevOps,25,3,"CI/CD,Linux,Git",6,100.0
+DBA,8,Sênior,Realocar Carreira,Cloud Computing,15,4,"GCP,AWS,Serverless,Azure",6,100.0
+Analista de Sistemas,11,Sênior,Atualizar Carreira,Cloud Computing,20,4,"GCP,Serverless,Azure,Containers",6,100.0
+Analista de Dados,8,Sênior,Realocar Carreira,Data Science,15,3,"Machine Learning,Python,R",7,100.0
+Gerente de Projetos,9,Sênior,Atualizar Carreira,Cloud Computing,15,4,"GCP,Serverless,AWS,Containers",6,100.0
+Suporte Técnico,7,Sênior,Realocar Carreira,Data Science,10,3,"Machine Learning,Pandas,NumPy",5,99.69
+DBA,20,Sênior,Realocar Carreira,Mobile,20,3,"Android,Swift,Flutter",9,100.0
+DBA,10,Sênior,Atualizar Carreira,DevOps,25,5,"Docker,CI/CD,Linux,Git,Kubernetes",5,100.0
+Designer,10,Sênior,Realocar Carreira,Segurança da Informação,15,5,"Pentest,OWASP,Firewall,Criptografia,SIEM",6,100.0
+QA Tester,9,Sênior,Realocar Carreira,UX/UI Design,20,3,"Design Thinking,Prototipagem,Sketch",8,100.0
+Desenvolvedor,13,Sênior,Atualizar Carreira,Desenvolvimento Web,10,5,"Python,JavaScript,CSS,Java,HTML",8,100.0
+Analista de Dados,9,Sênior,Realocar Carreira,DevOps,20,4,"Kubernetes,Linux,Terraform,CI/CD",7,100.0
+Desenvolvedor,7,Sênior,Atualizar Carreira,DevOps,15,3,"Git,AWS,Terraform",9,100.0
+Analista de Sistemas,12,Sênior,Atualizar Carreira,Data Science,10,3,"R,Estatística,Pandas",9,100.0
+QA Tester,8,Sênior,Realocar Carreira,Desenvolvimento Web,10,5,"Python,CSS,Node.js,JavaScript,Java",6,100.0
+Desenvolvedor,8,Sênior,Realocar Carreira,Mobile,10,4,"Swift,Kotlin,Android,iOS",10,100.0
+Suporte Técnico,7,Sênior,Realocar Carreira,Mobile,20,5,"React Native,Flutter,Swift,Android,Kotlin",10,100.0
+Designer,9,Sênior,Realocar Carreira,Data Science,15,4,"Machine Learning,NumPy,SQL,Pandas",8,100.0
+Analista de Sistemas,8,Sênior,Atualizar Carreira,Desenvolvimento Web,15,2,"Java,JavaScript",9,100.0
+Desenvolvedor,15,Sênior,Realocar Carreira,Cloud Computing,15,4,"GCP,Serverless,Azure,Containers",10,100.0
+Desenvolvedor,2,Júnior,Atualizar Carreira,Mobile,20,2,"Kotlin,iOS",5,100.0
+Suporte Técnico,10,Sênior,Atualizar Carreira,Cloud Computing,10,5,"GCP,AWS,Containers,Azure,Serverless",7,100.0
+Analista de Sistemas,9,Sênior,Atualizar Carreira,Data Science,20,3,"Python,SQL,Estatística",8,100.0
+Designer,0,Júnior,Realocar Carreira,Data Science,5,2,"NumPy,Python",10,84.49
+Suporte Técnico,19,Sênior,Atualizar Carreira,DevOps,20,3,"Linux,AWS,CI/CD",6,100.0
+Gerente de Projetos,3,Pleno,Realocar Carreira,Data Science,15,4,"Machine Learning,R,NumPy,Pandas",9,100.0
+Analista de Dados,7,Sênior,Realocar Carreira,Segurança da Informação,25,4,"Criptografia,Firewall,Pentest,SIEM",9,100.0
+Analista de Sistemas,1,Júnior,Realocar Carreira,Mobile,10,2,"React Native,Swift",7,81.38
+Designer,7,Sênior,Atualizar Carreira,UX/UI Design,5,5,"Prototipagem,Figma,Design Thinking,Adobe XD,Sketch",7,100.0
+Gerente de Projetos,13,Sênior,Realocar Carreira,Desenvolvimento Web,10,3,"React,CSS,Python",8,100.0
+Analista de Sistemas,7,Sênior,Realocar Carreira,Cloud Computing,20,5,"Azure,AWS,GCP,Containers,Serverless",7,100.0
+Gerente de Projetos,11,Sênior,Realocar Carreira,Desenvolvimento Web,20,2,"JavaScript,CSS",7,100.0
+Suporte Técnico,13,Sênior,Realocar Carreira,DevOps,15,3,"Kubernetes,Docker,CI/CD",8,100.0
+Suporte Técnico,19,Sênior,Realocar Carreira,UX/UI Design,15,5,"Design Thinking,Sketch,Adobe XD,Prototipagem,Figma",6,100.0
+DBA,18,Sênior,Atualizar Carreira,Data Science,5,5,"SQL,Python,Machine Learning,NumPy,Pandas",6,100.0
+Desenvolvedor,8,Sênior,Realocar Carreira,Inteligência Artificial,5,5,"NLP,PyTorch,TensorFlow,Computer Vision,Python",9,100.0
+DBA,10,Sênior,Realocar Carreira,UX/UI Design,20,5,"Adobe XD,Prototipagem,Design Thinking,Figma,Sketch",10,100.0
+Desenvolvedor,10,Sênior,Realocar Carreira,Desenvolvimento Web,30,5,"HTML,Node.js,JavaScript,Python,React",10,100.0
+Suporte Técnico,6,Pleno,Realocar Carreira,Inteligência Artificial,5,5,"NLP,Computer Vision,PyTorch,TensorFlow,Python",10,100.0
+Gerente de Projetos,19,Sênior,Realocar Carreira,DevOps,10,5,"Linux,CI/CD,AWS,Kubernetes,Terraform",9,100.0
+Gerente de Projetos,15,Sênior,Realocar Carreira,Mobile,20,2,"React Native,Android",8,100.0
+Administrador de Redes,17,Sênior,Realocar Carreira,Data Science,15,4,"R,Estatística,Machine Learning,Pandas",9,100.0
+QA Tester,14,Sênior,Atualizar Carreira,Segurança da Informação,10,5,"Firewall,OWASP,Pentest,Criptografia,SIEM",5,100.0
+Analista de Sistemas,6,Pleno,Atualizar Carreira,Cloud Computing,25,2,"Azure,AWS",8,100.0
+QA Tester,17,Sênior,Atualizar Carreira,Segurança da Informação,15,4,"Criptografia,SIEM,Pentest,OWASP",8,100.0
+Administrador de Redes,18,Sênior,Realocar Carreira,Mobile,20,2,"React Native,Android",10,100.0
+Administrador de Redes,19,Sênior,Atualizar Carreira,DevOps,15,2,"Linux,Git",5,100.0
+Administrador de Redes,16,Sênior,Realocar Carreira,UX/UI Design,15,4,"Design Thinking,Adobe XD,Figma,Prototipagem",10,100.0
+Desenvolvedor,13,Sênior,Realocar Carreira,Desenvolvimento Web,25,3,"CSS,HTML,JavaScript",7,100.0
+Analista de Sistemas,7,Sênior,Realocar Carreira,Data Science,10,2,"Pandas,SQL",8,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,Inteligência Artificial,20,4,"Python,PyTorch,TensorFlow,NLP",7,100.0
+DBA,12,Sênior,Realocar Carreira,Segurança da Informação,15,2,"SIEM,OWASP",8,100.0
+Designer,9,Sênior,Atualizar Carreira,Desenvolvimento Web,20,4,"Node.js,JavaScript,CSS,Java",6,100.0
+Analista de Dados,19,Sênior,Realocar Carreira,Data Science,15,2,"Python,R",7,100.0
+Suporte Técnico,11,Sênior,Realocar Carreira,Cloud Computing,20,5,"Serverless,GCP,Azure,AWS,Containers",7,100.0
+Gerente de Projetos,0,Júnior,Realocar Carreira,Segurança da Informação,10,3,"Pentest,Criptografia,Firewall",10,99.97
+Analista de Dados,8,Sênior,Atualizar Carreira,Inteligência Artificial,25,2,"Python,TensorFlow",6,100.0
+DBA,2,Júnior,Atualizar Carreira,Cloud Computing,15,2,"Containers,Azure",9,100.0
+QA Tester,13,Sênior,Realocar Carreira,Cloud Computing,20,2,"AWS,GCP",6,100.0
+Analista de Dados,17,Sênior,Realocar Carreira,Inteligência Artificial,5,5,"Python,Computer Vision,NLP,TensorFlow,PyTorch",6,100.0
+QA Tester,11,Sênior,Realocar Carreira,DevOps,15,5,"Docker,CI/CD,Terraform,Git,Linux",8,100.0
+Desenvolvedor,9,Sênior,Atualizar Carreira,Desenvolvimento Web,20,2,"Python,Node.js",6,100.0
+QA Tester,7,Sênior,Realocar Carreira,Data Science,15,2,"R,Pandas",10,100.0
+QA Tester,17,Sênior,Realocar Carreira,Data Science,25,3,"Machine Learning,Estatística,R",7,100.0
+Administrador de Redes,1,Júnior,Atualizar Carreira,DevOps,15,3,"Kubernetes,Terraform,Git",5,98.58
+Analista de Dados,19,Sênior,Atualizar Carreira,Data Science,30,2,"Python,NumPy",9,100.0
+Desenvolvedor,15,Sênior,Realocar Carreira,Mobile,10,4,"Android,Flutter,Swift,React Native",10,100.0
+Analista de Sistemas,14,Sênior,Atualizar Carreira,Cloud Computing,15,5,"Serverless,Containers,Azure,AWS,GCP",7,100.0
+DBA,0,Júnior,Realocar Carreira,Desenvolvimento Web,25,3,"HTML,React,Node.js",5,91.64
+DBA,3,Pleno,Realocar Carreira,Inteligência Artificial,25,2,"NLP,Python",10,100.0
+Analista de Sistemas,4,Pleno,Realocar Carreira,Inteligência Artificial,15,2,"Python,PyTorch",6,95.7
+Analista de Sistemas,15,Sênior,Atualizar Carreira,Desenvolvimento Web,5,2,"React,JavaScript",8,100.0
+DBA,16,Sênior,Atualizar Carreira,Data Science,15,5,"SQL,R,Machine Learning,Estatística,NumPy",6,100.0
+QA Tester,9,Sênior,Realocar Carreira,Mobile,15,3,"Swift,iOS,Android",10,100.0
+Suporte Técnico,11,Sênior,Realocar Carreira,DevOps,10,5,"CI/CD,Git,Linux,Terraform,AWS",5,100.0
+Analista de Dados,15,Sênior,Realocar Carreira,Inteligência Artificial,30,3,"PyTorch,Computer Vision,NLP",8,100.0
+QA Tester,14,Sênior,Realocar Carreira,Data Science,20,4,"R,Pandas,Estatística,NumPy",9,100.0
+Designer,13,Sênior,Realocar Carreira,Cloud Computing,25,5,"Containers,Azure,Serverless,GCP,AWS",8,100.0
+QA Tester,16,Sênior,Realocar Carreira,Segurança da Informação,20,5,"Firewall,OWASP,Pentest,SIEM,Criptografia",5,100.0
+Suporte Técnico,2,Júnior,Realocar Carreira,UX/UI Design,10,5,"Design Thinking,Prototipagem,Figma,Adobe XD,Sketch",6,96.1
+Suporte Técnico,0,Júnior,Realocar Carreira,Data Science,15,3,"R,Machine Learning,SQL",7,93.88
+DBA,1,Júnior,Realocar Carreira,Data Science,10,2,"R,Estatística",5,84.15
+Analista de Dados,17,Sênior,Realocar Carreira,Data Science,15,2,"Estatística,Machine Learning",9,100.0
+Designer,15,Sênior,Realocar Carreira,DevOps,10,3,"Git,Linux,Kubernetes",8,98.38
+Suporte Técnico,4,Pleno,Realocar Carreira,DevOps,30,4,"AWS,Terraform,CI/CD,Linux",8,100.0
+Designer,0,Júnior,Realocar Carreira,Mobile,15,5,"Kotlin,iOS,Flutter,React Native,Android",9,100.0
+QA Tester,19,Sênior,Realocar Carreira,Cloud Computing,10,4,"AWS,Serverless,Containers,GCP",6,100.0
+QA Tester,0,Júnior,Realocar Carreira,Data Science,10,5,"R,Machine Learning,Estatística,NumPy,Pandas",5,89.35
+Desenvolvedor,3,Pleno,Realocar Carreira,DevOps,30,5,"Kubernetes,Linux,Terraform,Git,Docker",7,100.0
+Administrador de Redes,20,Sênior,Realocar Carreira,Segurança da Informação,20,2,"Pentest,OWASP",7,100.0
+Desenvolvedor,18,Sênior,Atualizar Carreira,Desenvolvimento Web,25,3,"JavaScript,Java,Python",7,100.0
+Analista de Dados,5,Pleno,Realocar Carreira,UX/UI Design,15,4,"Sketch,Prototipagem,Adobe XD,Design Thinking",9,100.0
+Suporte Técnico,17,Sênior,Realocar Carreira,Mobile,5,2,"Swift,Kotlin",9,100.0
+Analista de Dados,2,Júnior,Realocar Carreira,Segurança da Informação,20,4,"SIEM,Criptografia,Pentest,OWASP",5,96.1
+Suporte Técnico,7,Sênior,Realocar Carreira,UX/UI Design,10,2,"Sketch,Figma",8,100.0
+Gerente de Projetos,6,Pleno,Atualizar Carreira,DevOps,25,5,"Docker,Linux,Terraform,CI/CD,Kubernetes",8,100.0
+QA Tester,8,Sênior,Realocar Carreira,Data Science,15,4,"Machine Learning,Python,NumPy,SQL",6,100.0
+Analista de Sistemas,8,Sênior,Realocar Carreira,Cloud Computing,15,2,"Azure,Containers",8,100.0
+Analista de Sistemas,0,Júnior,Atualizar Carreira,Data Science,20,2,"Estatística,SQL",10,100.0
+QA Tester,19,Sênior,Realocar Carreira,Data Science,15,5,"R,SQL,Machine Learning,NumPy,Pandas",9,100.0
+QA Tester,13,Sênior,Atualizar Carreira,Segurança da Informação,20,4,"Pentest,OWASP,Criptografia,Firewall",5,100.0
+Gerente de Projetos,5,Pleno,Realocar Carreira,Mobile,15,3,"iOS,Swift,Android",7,100.0
+Desenvolvedor,19,Sênior,Atualizar Carreira,Desenvolvimento Web,20,2,"CSS,Python",6,100.0
+Desenvolvedor,0,Júnior,Realocar Carreira,Desenvolvimento Web,20,4,"React,Node.js,JavaScript,Python",9,99.55
+Analista de Dados,4,Pleno,Atualizar Carreira,Inteligência Artificial,20,4,"NLP,Computer Vision,TensorFlow,PyTorch",5,100.0
+Gerente de Projetos,6,Pleno,Atualizar Carreira,Cloud Computing,15,4,"Containers,GCP,Azure,Serverless",7,100.0
+Desenvolvedor,11,Sênior,Atualizar Carreira,DevOps,15,5,"Kubernetes,Git,Terraform,CI/CD,Docker",5,100.0
+DBA,17,Sênior,Atualizar Carreira,Data Science,15,2,"Pandas,R",6,100.0
+Administrador de Redes,12,Sênior,Realocar Carreira,Inteligência Artificial,10,3,"Computer Vision,NLP,TensorFlow",5,100.0
+Suporte Técnico,8,Sênior,Realocar Carreira,Inteligência Artificial,5,4,"TensorFlow,NLP,Computer Vision,Python",5,100.0
+Analista de Dados,8,Sênior,Atualizar Carreira,Cloud Computing,20,2,"Serverless,GCP",9,100.0
+Designer,1,Júnior,Realocar Carreira,UX/UI Design,10,4,"Figma,Prototipagem,Design Thinking,Adobe XD",5,100.0
+QA Tester,7,Sênior,Realocar Carreira,Cloud Computing,10,4,"Containers,GCP,Azure,Serverless",5,100.0
+Administrador de Redes,9,Sênior,Realocar Carreira,DevOps,15,4,"Linux,Kubernetes,Terraform,AWS",8,100.0
+Designer,4,Pleno,Realocar Carreira,Cloud Computing,15,5,"AWS,Azure,Containers,GCP,Serverless",8,100.0
+Administrador de Redes,18,Sênior,Realocar Carreira,Segurança da Informação,15,3,"SIEM,Pentest,Criptografia",7,100.0
+QA Tester,12,Sênior,Realocar Carreira,DevOps,10,5,"Docker,CI/CD,Git,Linux,Kubernetes",7,100.0
+Analista de Dados,16,Sênior,Realocar Carreira,Mobile,15,5,"Android,iOS,Kotlin,Flutter,React Native",10,100.0
+DBA,18,Sênior,Realocar Carreira,Inteligência Artificial,20,5,"Python,Computer Vision,NLP,PyTorch,TensorFlow",6,100.0
+Analista de Sistemas,8,Sênior,Realocar Carreira,Mobile,5,3,"Swift,Flutter,Android",5,97.99
+Gerente de Projetos,9,Sênior,Atualizar Carreira,Cloud Computing,25,5,"AWS,Azure,Serverless,GCP,Containers",9,100.0
+Desenvolvedor,6,Pleno,Realocar Carreira,Segurança da Informação,15,2,"Pentest,OWASP",10,100.0
+Designer,15,Sênior,Realocar Carreira,Cloud Computing,20,2,"Containers,Azure",6,100.0
+DBA,5,Pleno,Realocar Carreira,Mobile,5,5,"Android,React Native,Kotlin,Flutter,Swift",9,100.0
+Suporte Técnico,0,Júnior,Atualizar Carreira,Segurança da Informação,20,4,"Criptografia,Pentest,SIEM,OWASP",5,100.0
+Analista de Dados,11,Sênior,Realocar Carreira,Inteligência Artificial,20,2,"NLP,PyTorch",8,100.0
+Administrador de Redes,2,Júnior,Realocar Carreira,DevOps,10,2,"Terraform,Git",9,83.78
+Analista de Sistemas,10,Sênior,Realocar Carreira,Cloud Computing,20,3,"AWS,Serverless,Azure",7,100.0
+Administrador de Redes,3,Pleno,Realocar Carreira,Mobile,15,5,"Flutter,React Native,Kotlin,Swift,Android",7,100.0
+Gerente de Projetos,4,Pleno,Atualizar Carreira,DevOps,15,2,"AWS,Linux",6,100.0
+Gerente de Projetos,18,Sênior,Realocar Carreira,Cloud Computing,25,2,"Containers,Serverless",8,100.0
+QA Tester,7,Sênior,Realocar Carreira,Data Science,15,4,"Pandas,R,Machine Learning,NumPy",6,100.0
+Analista de Dados,8,Sênior,Realocar Carreira,Inteligência Artificial,5,2,"Computer Vision,NLP",10,99.4
+Suporte Técnico,17,Sênior,Realocar Carreira,Desenvolvimento Web,5,3,"Node.js,React,Python",9,100.0
+Analista de Sistemas,10,Sênior,Realocar Carreira,Inteligência Artificial,15,2,"TensorFlow,Computer Vision",8,100.0
+Gerente de Projetos,12,Sênior,Realocar Carreira,Cloud Computing,20,2,"Containers,Azure",7,100.0
+Desenvolvedor,12,Sênior,Atualizar Carreira,Desenvolvimento Web,20,5,"CSS,HTML,React,Node.js,Python",5,100.0
+Administrador de Redes,16,Sênior,Atualizar Carreira,Segurança da Informação,15,2,"SIEM,Criptografia",8,100.0
+Desenvolvedor,2,Júnior,Realocar Carreira,UX/UI Design,20,2,"Prototipagem,Sketch",9,94.72
+Gerente de Projetos,14,Sênior,Realocar Carreira,DevOps,15,2,"Linux,CI/CD",5,100.0
+Suporte Técnico,1,Júnior,Realocar Carreira,Data Science,20,5,"Python,Estatística,Machine Learning,NumPy,R",7,100.0
+Suporte Técnico,6,Pleno,Realocar Carreira,Mobile,30,5,"Flutter,iOS,Swift,React Native,Kotlin",10,100.0
+QA Tester,4,Pleno,Realocar Carreira,DevOps,25,4,"Kubernetes,CI/CD,Linux,Terraform",5,100.0
+Gerente de Projetos,9,Sênior,Realocar Carreira,UX/UI Design,20,4,"Sketch,Figma,Adobe XD,Prototipagem",9,100.0
+Gerente de Projetos,8,Sênior,Atualizar Carreira,Data Science,15,2,"Python,Pandas",5,100.0
+Suporte Técnico,17,Sênior,Atualizar Carreira,Cloud Computing,20,2,"Serverless,GCP",8,100.0
+Administrador de Redes,1,Júnior,Atualizar Carreira,DevOps,20,4,"Docker,Git,CI/CD,AWS",6,100.0
+Designer,11,Sênior,Realocar Carreira,Cloud Computing,20,5,"GCP,Containers,Serverless,AWS,Azure",7,100.0
+Analista de Dados,7,Sênior,Atualizar Carreira,Inteligência Artificial,15,2,"TensorFlow,NLP",10,100.0
+Analista de Sistemas,2,Júnior,Realocar Carreira,Segurança da Informação,15,5,"Firewall,Criptografia,OWASP,SIEM,Pentest",6,96.63
+QA Tester,4,Pleno,Realocar Carreira,Mobile,10,2,"Kotlin,Flutter",9,100.0
+QA Tester,0,Júnior,Realocar Carreira,Mobile,20,3,"Swift,React Native,Flutter",7,96.68
+Analista de Sistemas,1,Júnior,Atualizar Carreira,Data Science,20,4,"NumPy,Machine Learning,SQL,Estatística",6,100.0
+Administrador de Redes,16,Sênior,Atualizar Carreira,DevOps,20,5,"Terraform,Git,AWS,Linux,Kubernetes",9,100.0
+DBA,5,Pleno,Atualizar Carreira,Cloud Computing,10,3,"Containers,Azure,GCP",6,100.0
+Administrador de Redes,11,Sênior,Realocar Carreira,Mobile,25,3,"Android,iOS,Kotlin",9,100.0
+Desenvolvedor,10,Sênior,Realocar Carreira,Mobile,10,4,"Android,iOS,Flutter,Swift",6,100.0
+Designer,20,Sênior,Realocar Carreira,Desenvolvimento Web,5,4,"React,Java,HTML,CSS",8,100.0
+Gerente de Projetos,1,Júnior,Atualizar Carreira,DevOps,20,3,"Kubernetes,Terraform,Git",10,100.0
+QA Tester,9,Sênior,Realocar Carreira,Segurança da Informação,30,3,"OWASP,Pentest,SIEM",5,100.0
+DBA,3,Pleno,Atualizar Carreira,DevOps,10,3,"Terraform,Docker,AWS",7,100.0
+Administrador de Redes,1,Júnior,Realocar Carreira,Desenvolvimento Web,25,3,"React,HTML,Node.js",7,100.0
+QA Tester,7,Sênior,Realocar Carreira,Mobile,25,2,"Kotlin,Flutter",5,100.0
+Analista de Dados,14,Sênior,Realocar Carreira,DevOps,5,2,"Git,AWS",9,96.69
+Desenvolvedor,5,Pleno,Atualizar Carreira,Mobile,10,2,"Kotlin,Flutter",10,100.0
+Desenvolvedor,2,Júnior,Atualizar Carreira,Desenvolvimento Web,15,3,"React,CSS,Node.js",6,99.13
+QA Tester,15,Sênior,Realocar Carreira,Mobile,20,2,"Swift,React Native",9,100.0
+Desenvolvedor,2,Júnior,Realocar Carreira,Desenvolvimento Web,15,4,"HTML,React,Node.js,CSS",9,91.88
+Designer,20,Sênior,Realocar Carreira,Segurança da Informação,10,2,"Criptografia,Pentest",10,100.0
+Designer,14,Sênior,Realocar Carreira,UX/UI Design,15,4,"Figma,Adobe XD,Prototipagem,Design Thinking",8,100.0
+DBA,15,Sênior,Realocar Carreira,Cloud Computing,20,5,"GCP,AWS,Azure,Serverless,Containers",7,100.0
+QA Tester,11,Sênior,Realocar Carreira,Cloud Computing,20,2,"Containers,Serverless",10,100.0
+Suporte Técnico,8,Sênior,Atualizar Carreira,Segurança da Informação,5,2,"Criptografia,OWASP",9,100.0
+Analista de Dados,8,Sênior,Atualizar Carreira,Cloud Computing,20,4,"Containers,Azure,Serverless,AWS",6,100.0
+Suporte Técnico,9,Sênior,Atualizar Carreira,DevOps,15,5,"Git,AWS,Terraform,Docker,CI/CD",6,100.0
+Analista de Dados,8,Sênior,Realocar Carreira,Segurança da Informação,20,4,"Criptografia,OWASP,Pentest,Firewall",10,100.0
+QA Tester,18,Sênior,Atualizar Carreira,Segurança da Informação,10,2,"Pentest,Firewall",8,100.0
+Analista de Dados,2,Júnior,Realocar Carreira,Data Science,25,4,"SQL,NumPy,Estatística,R",9,100.0
+Designer,11,Sênior,Atualizar Carreira,Mobile,10,3,"Kotlin,Swift,React Native",6,100.0
+Suporte Técnico,17,Sênior,Atualizar Carreira,Segurança da Informação,15,2,"SIEM,Firewall",8,100.0
+Administrador de Redes,19,Sênior,Realocar Carreira,Desenvolvimento Web,10,3,"Python,CSS,React",7,100.0
+Suporte Técnico,15,Sênior,Realocar Carreira,UX/UI Design,15,3,"Sketch,Prototipagem,Figma",5,100.0
+Suporte Técnico,0,Júnior,Atualizar Carreira,DevOps,20,4,"Linux,Docker,CI/CD,AWS",7,100.0
+DBA,6,Pleno,Realocar Carreira,UX/UI Design,10,4,"Sketch,Prototipagem,Adobe XD,Figma",8,100.0
+Administrador de Redes,12,Sênior,Realocar Carreira,Segurança da Informação,20,3,"OWASP,Pentest,Firewall",7,100.0
+Gerente de Projetos,3,Pleno,Realocar Carreira,UX/UI Design,25,4,"Design Thinking,Sketch,Adobe XD,Figma",9,100.0
+Gerente de Projetos,19,Sênior,Realocar Carreira,UX/UI Design,5,5,"Design Thinking,Adobe XD,Prototipagem,Figma,Sketch",7,100.0
+DBA,19,Sênior,Realocar Carreira,Inteligência Artificial,20,5,"Python,PyTorch,TensorFlow,NLP,Computer Vision",6,100.0
+Desenvolvedor,4,Pleno,Realocar Carreira,Segurança da Informação,15,5,"Criptografia,SIEM,OWASP,Firewall,Pentest",7,100.0
+Suporte Técnico,3,Pleno,Realocar Carreira,Segurança da Informação,20,2,"Criptografia,OWASP",9,100.0
+DBA,13,Sênior,Realocar Carreira,Desenvolvimento Web,20,4,"CSS,React,Python,Node.js",5,100.0
+DBA,2,Júnior,Atualizar Carreira,Data Science,30,4,"Estatística,Machine Learning,R,NumPy",7,100.0
+Analista de Sistemas,0,Júnior,Realocar Carreira,Mobile,10,5,"React Native,iOS,Kotlin,Flutter,Android",5,93.12
+Analista de Dados,20,Sênior,Atualizar Carreira,Inteligência Artificial,15,5,"Computer Vision,TensorFlow,PyTorch,NLP,Python",9,100.0
+Desenvolvedor,20,Sênior,Atualizar Carreira,Desenvolvimento Web,10,2,"CSS,Java",10,100.0
+Gerente de Projetos,15,Sênior,Realocar Carreira,DevOps,20,2,"Kubernetes,CI/CD",6,100.0
+Designer,6,Pleno,Realocar Carreira,UX/UI Design,30,3,"Adobe XD,Figma,Prototipagem",9,100.0
+Analista de Dados,18,Sênior,Realocar Carreira,Segurança da Informação,10,3,"OWASP,Firewall,SIEM",9,100.0
+QA Tester,20,Sênior,Realocar Carreira,Desenvolvimento Web,15,3,"JavaScript,Python,HTML",6,100.0
+Desenvolvedor,11,Sênior,Realocar Carreira,UX/UI Design,10,5,"Figma,Adobe XD,Prototipagem,Design Thinking,Sketch",10,100.0
+Desenvolvedor,11,Sênior,Realocar Carreira,Segurança da Informação,30,5,"SIEM,Pentest,Firewall,Criptografia,OWASP",9,100.0
+Designer,8,Sênior,Realocar Carreira,Desenvolvimento Web,20,5,"Java,CSS,HTML,Node.js,Python",8,100.0
+Administrador de Redes,8,Sênior,Realocar Carreira,Mobile,10,3,"iOS,Kotlin,Android",9,100.0
+Designer,17,Sênior,Realocar Carreira,Mobile,10,4,"Flutter,Android,iOS,Kotlin",5,100.0
+Administrador de Redes,8,Sênior,Realocar Carreira,Cloud Computing,15,5,"Serverless,AWS,Containers,Azure,GCP",7,100.0
+Designer,12,Sênior,Realocar Carreira,Desenvolvimento Web,15,4,"React,HTML,Python,JavaScript",10,100.0
+Administrador de Redes,14,Sênior,Realocar Carreira,Data Science,25,4,"Machine Learning,SQL,R,Python",7,100.0
+DBA,13,Sênior,Atualizar Carreira,Cloud Computing,5,4,"GCP,Azure,Serverless,AWS",7,100.0
+Suporte Técnico,17,Sênior,Atualizar Carreira,DevOps,15,3,"Linux,Terraform,Docker",10,100.0
+QA Tester,12,Sênior,Atualizar Carreira,Segurança da Informação,25,4,"Firewall,Pentest,OWASP,SIEM",9,100.0
+Administrador de Redes,8,Sênior,Realocar Carreira,Inteligência Artificial,15,4,"Computer Vision,PyTorch,TensorFlow,NLP",9,100.0
+QA Tester,10,Sênior,Atualizar Carreira,Desenvolvimento Web,10,2,"HTML,Java",6,100.0
+QA Tester,5,Pleno,Realocar Carreira,Mobile,25,3,"Kotlin,Android,React Native",6,100.0
+QA Tester,13,Sênior,Atualizar Carreira,Desenvolvimento Web,15,4,"React,Node.js,HTML,Python",7,100.0
+Desenvolvedor,14,Sênior,Realocar Carreira,Mobile,15,3,"Kotlin,React Native,Flutter",8,100.0
+DBA,9,Sênior,Atualizar Carreira,Cloud Computing,5,3,"Serverless,Containers,GCP",8,100.0
+Administrador de Redes,16,Sênior,Atualizar Carreira,Cloud Computing,10,3,"Azure,GCP,Containers",10,100.0
+DBA,10,Sênior,Atualizar Carreira,Cloud Computing,20,2,"AWS,Serverless",5,100.0
+Desenvolvedor,11,Sênior,Atualizar Carreira,DevOps,15,5,"Terraform,Git,AWS,Docker,CI/CD",6,100.0
+Suporte Técnico,7,Sênior,Realocar Carreira,Cloud Computing,15,3,"Azure,Serverless,Containers",8,100.0
+Analista de Sistemas,14,Sênior,Atualizar Carreira,Desenvolvimento Web,10,4,"Java,CSS,React,Python",8,100.0
+Gerente de Projetos,4,Pleno,Atualizar Carreira,Data Science,15,4,"NumPy,Estatística,SQL,R",10,100.0
+Gerente de Projetos,19,Sênior,Realocar Carreira,UX/UI Design,10,3,"Adobe XD,Design Thinking,Sketch",7,100.0
+Analista de Dados,11,Sênior,Atualizar Carreira,Inteligência Artificial,10,3,"Python,Computer Vision,TensorFlow",8,100.0
+DBA,18,Sênior,Realocar Carreira,Data Science,20,2,"NumPy,Pandas",10,100.0
+Suporte Técnico,19,Sênior,Realocar Carreira,Data Science,15,3,"Machine Learning,Pandas,SQL",10,100.0
+DBA,13,Sênior,Atualizar Carreira,Cloud Computing,10,2,"Containers,GCP",7,100.0
+Desenvolvedor,13,Sênior,Realocar Carreira,Mobile,15,5,"React Native,iOS,Flutter,Kotlin,Android",10,100.0
+Gerente de Projetos,12,Sênior,Atualizar Carreira,DevOps,15,5,"AWS,Linux,Docker,Git,Kubernetes",9,100.0
+DBA,20,Sênior,Atualizar Carreira,Data Science,15,2,"Pandas,SQL",8,100.0
+Administrador de Redes,17,Sênior,Atualizar Carreira,Cloud Computing,25,3,"Azure,Serverless,AWS",8,100.0
+DBA,13,Sênior,Realocar Carreira,DevOps,20,3,"Git,AWS,Linux",10,100.0
+Analista de Dados,2,Júnior,Atualizar Carreira,Cloud Computing,10,4,"Containers,Serverless,GCP,AWS",6,100.0
+Desenvolvedor,10,Sênior,Atualizar Carreira,Desenvolvimento Web,5,3,"HTML,JavaScript,Node.js",8,100.0
+Analista de Sistemas,3,Pleno,Realocar Carreira,Inteligência Artificial,15,4,"TensorFlow,Computer Vision,PyTorch,Python",10,100.0
+Analista de Dados,0,Júnior,Realocar Carreira,Mobile,15,2,"Android,React Native",7,94.14
+Administrador de Redes,11,Sênior,Realocar Carreira,Data Science,20,5,"SQL,Python,Estatística,Machine Learning,R",5,100.0
+Desenvolvedor,11,Sênior,Atualizar Carreira,Desenvolvimento Web,5,2,"Node.js,React",10,100.0
+Analista de Dados,3,Pleno,Realocar Carreira,Cloud Computing,10,3,"GCP,Azure,AWS",5,98.17
+Suporte Técnico,1,Júnior,Realocar Carreira,DevOps,15,4,"Linux,Kubernetes,Docker,Terraform",6,87.78
+Analista de Dados,1,Júnior,Atualizar Carreira,Data Science,15,3,"Python,Machine Learning,SQL",8,100.0
+Administrador de Redes,14,Sênior,Atualizar Carreira,DevOps,15,2,"Terraform,Linux",7,100.0
+Desenvolvedor,14,Sênior,Realocar Carreira,UX/UI Design,15,2,"Sketch,Figma",8,100.0
+Administrador de Redes,12,Sênior,Atualizar Carreira,Cloud Computing,15,5,"AWS,Azure,GCP,Containers,Serverless",7,100.0
+Suporte Técnico,18,Sênior,Realocar Carreira,Inteligência Artificial,5,2,"PyTorch,TensorFlow",9,100.0
+Designer,19,Sênior,Realocar Carreira,Mobile,20,2,"iOS,Swift",8,100.0
+Gerente de Projetos,0,Júnior,Realocar Carreira,Desenvolvimento Web,15,4,"HTML,Python,React,Node.js",8,97.26
+QA Tester,19,Sênior,Realocar Carreira,Desenvolvimento Web,15,5,"HTML,React,CSS,JavaScript,Node.js",6,100.0
+Analista de Sistemas,19,Sênior,Realocar Carreira,Desenvolvimento Web,20,5,"Python,JavaScript,React,Java,Node.js",8,100.0
+QA Tester,8,Sênior,Realocar Carreira,UX/UI Design,15,5,"Figma,Sketch,Design Thinking,Prototipagem,Adobe XD",7,100.0
+Desenvolvedor,14,Sênior,Realocar Carreira,Inteligência Artificial,10,3,"TensorFlow,Python,NLP",8,100.0
+DBA,15,Sênior,Realocar Carreira,Data Science,10,5,"Machine Learning,Estatística,R,Pandas,Python",7,100.0
+DBA,18,Sênior,Atualizar Carreira,DevOps,5,2,"Linux,Git",6,100.0
+Designer,12,Sênior,Atualizar Carreira,Desenvolvimento Web,30,5,"Java,Python,HTML,CSS,React",6,100.0
+Administrador de Redes,19,Sênior,Realocar Carreira,Cloud Computing,15,3,"Azure,AWS,Containers",6,100.0
+Analista de Sistemas,5,Pleno,Atualizar Carreira,Desenvolvimento Web,20,2,"Python,Java",8,100.0
+DBA,0,Júnior,Atualizar Carreira,DevOps,20,4,"CI/CD,Docker,Git,Terraform",9,100.0
+Gerente de Projetos,0,Júnior,Atualizar Carreira,Cloud Computing,15,3,"GCP,Azure,Containers",9,100.0
+Desenvolvedor,9,Sênior,Atualizar Carreira,DevOps,15,2,"Docker,Git",9,100.0
+Analista de Sistemas,9,Sênior,Realocar Carreira,Segurança da Informação,15,4,"Criptografia,OWASP,Firewall,SIEM",6,100.0
+Suporte Técnico,1,Júnior,Realocar Carreira,UX/UI Design,15,2,"Prototipagem,Design Thinking",5,90.93
+Analista de Sistemas,4,Pleno,Atualizar Carreira,Data Science,25,3,"Estatística,Pandas,R",7,100.0
+Suporte Técnico,20,Sênior,Realocar Carreira,UX/UI Design,5,3,"Prototipagem,Adobe XD,Design Thinking",7,97.86
+QA Tester,4,Pleno,Atualizar Carreira,DevOps,5,2,"CI/CD,Linux",10,100.0
+Administrador de Redes,19,Sênior,Atualizar Carreira,Segurança da Informação,20,3,"Pentest,OWASP,Criptografia",5,100.0
+Analista de Dados,9,Sênior,Realocar Carreira,Inteligência Artificial,15,4,"NLP,PyTorch,TensorFlow,Computer Vision",7,100.0
+Gerente de Projetos,11,Sênior,Atualizar Carreira,DevOps,20,5,"Docker,AWS,Kubernetes,Linux,Terraform",7,100.0
+Gerente de Projetos,18,Sênior,Atualizar Carreira,DevOps,20,3,"Git,Terraform,Kubernetes",7,100.0
+Administrador de Redes,11,Sênior,Realocar Carreira,DevOps,10,5,"Docker,AWS,Terraform,Linux,Kubernetes",10,100.0
+Designer,19,Sênior,Realocar Carreira,Data Science,20,4,"Estatística,SQL,R,Python",8,100.0
+Administrador de Redes,13,Sênior,Atualizar Carreira,Segurança da Informação,10,5,"Firewall,Pentest,OWASP,Criptografia,SIEM",6,100.0
+Gerente de Projetos,19,Sênior,Realocar Carreira,Desenvolvimento Web,10,5,"React,HTML,CSS,Python,JavaScript",5,100.0
+Designer,4,Pleno,Realocar Carreira,Segurança da Informação,10,5,"Pentest,OWASP,Firewall,Criptografia,SIEM",10,100.0
+DBA,4,Pleno,Realocar Carreira,Mobile,20,2,"Swift,React Native",10,100.0
+DBA,11,Sênior,Realocar Carreira,Mobile,20,2,"Swift,Android",10,100.0
+Gerente de Projetos,4,Pleno,Atualizar Carreira,DevOps,10,4,"Git,Kubernetes,Docker,Linux",6,100.0
+Suporte Técnico,6,Pleno,Realocar Carreira,Segurança da Informação,20,2,"Firewall,Criptografia",5,100.0
+Suporte Técnico,7,Sênior,Realocar Carreira,Segurança da Informação,15,2,"Pentest,SIEM",5,97.39
+Administrador de Redes,0,Júnior,Realocar Carreira,UX/UI Design,20,2,"Sketch,Figma",8,90.83
+DBA,8,Sênior,Realocar Carreira,Inteligência Artificial,30,5,"PyTorch,TensorFlow,NLP,Computer Vision,Python",7,100.0
+Designer,0,Júnior,Atualizar Carreira,Mobile,10,5,"Kotlin,Android,Swift,iOS,React Native",7,100.0
+Designer,5,Pleno,Realocar Carreira,Mobile,5,3,"React Native,Swift,iOS",8,95.59
+DBA,14,Sênior,Atualizar Carreira,DevOps,10,4,"AWS,Linux,Docker,Kubernetes",5,100.0
+Administrador de Redes,18,Sênior,Realocar Carreira,Desenvolvimento Web,20,4,"Python,HTML,Java,CSS",9,100.0
+Administrador de Redes,6,Pleno,Atualizar Carreira,Cloud Computing,15,5,"Serverless,AWS,Containers,Azure,GCP",7,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,Segurança da Informação,10,5,"Pentest,Firewall,OWASP,Criptografia,SIEM",5,100.0
+Analista de Dados,16,Sênior,Realocar Carreira,UX/UI Design,20,3,"Design Thinking,Adobe XD,Figma",6,100.0
+Administrador de Redes,16,Sênior,Atualizar Carreira,Segurança da Informação,20,5,"Criptografia,Pentest,SIEM,Firewall,OWASP",6,100.0
+Gerente de Projetos,10,Sênior,Realocar Carreira,UX/UI Design,15,5,"Figma,Sketch,Prototipagem,Adobe XD,Design Thinking",10,100.0
+Analista de Sistemas,5,Pleno,Atualizar Carreira,Cloud Computing,30,2,"Containers,GCP",9,100.0
+DBA,7,Sênior,Realocar Carreira,Inteligência Artificial,10,5,"PyTorch,Python,TensorFlow,NLP,Computer Vision",9,100.0
+Desenvolvedor,16,Sênior,Realocar Carreira,Data Science,20,5,"Estatística,SQL,NumPy,R,Pandas",10,100.0
+DBA,4,Pleno,Realocar Carreira,Desenvolvimento Web,10,3,"Python,CSS,React",9,100.0
+QA Tester,14,Sênior,Realocar Carreira,Data Science,5,5,"Estatística,Machine Learning,NumPy,R,Python",9,100.0
+Designer,14,Sênior,Realocar Carreira,Mobile,20,2,"iOS,Android",9,100.0
+Designer,7,Sênior,Realocar Carreira,Segurança da Informação,15,5,"Firewall,Criptografia,OWASP,SIEM,Pentest",10,100.0
+Analista de Sistemas,4,Pleno,Atualizar Carreira,Desenvolvimento Web,10,5,"React,JavaScript,Python,HTML,Java",8,100.0
+Analista de Dados,9,Sênior,Atualizar Carreira,Inteligência Artificial,5,5,"PyTorch,Python,TensorFlow,NLP,Computer Vision",5,100.0
+Desenvolvedor,2,Júnior,Realocar Carreira,Desenvolvimento Web,20,2,"CSS,HTML",8,100.0
+Analista de Sistemas,11,Sênior,Realocar Carreira,UX/UI Design,10,3,"Design Thinking,Figma,Sketch",5,100.0
+Suporte Técnico,0,Júnior,Realocar Carreira,UX/UI Design,20,3,"Adobe XD,Sketch,Figma",8,100.0
+Desenvolvedor,20,Sênior,Realocar Carreira,Mobile,15,4,"Android,iOS,Kotlin,Swift",5,100.0
+Analista de Sistemas,9,Sênior,Realocar Carreira,Segurança da Informação,5,3,"Criptografia,Pentest,OWASP",5,95.11
+Designer,10,Sênior,Realocar Carreira,Data Science,20,5,"NumPy,Estatística,Python,R,Machine Learning",6,100.0
+Gerente de Projetos,16,Sênior,Realocar Carreira,Segurança da Informação,25,2,"SIEM,Pentest",8,100.0
+Suporte Técnico,8,Sênior,Atualizar Carreira,DevOps,10,4,"Terraform,Linux,Kubernetes,CI/CD",7,100.0
+Desenvolvedor,7,Sênior,Realocar Carreira,UX/UI Design,25,4,"Prototipagem,Design Thinking,Adobe XD,Figma",9,100.0
+Administrador de Redes,5,Pleno,Atualizar Carreira,DevOps,10,4,"Kubernetes,Git,Linux,CI/CD",10,100.0
+DBA,3,Pleno,Realocar Carreira,UX/UI Design,20,3,"Design Thinking,Adobe XD,Prototipagem",7,100.0
+QA Tester,4,Pleno,Atualizar Carreira,Desenvolvimento Web,15,3,"Python,React,Java",6,100.0
+Analista de Dados,16,Sênior,Realocar Carreira,UX/UI Design,10,5,"Sketch,Figma,Prototipagem,Adobe XD,Design Thinking",9,100.0
+Designer,14,Sênior,Realocar Carreira,Data Science,25,3,"NumPy,Pandas,SQL",5,100.0
+Desenvolvedor,9,Sênior,Atualizar Carreira,Desenvolvimento Web,15,3,"HTML,React,CSS",9,100.0
+DBA,3,Pleno,Realocar Carreira,Mobile,5,4,"Android,React Native,iOS,Swift",5,83.76
+QA Tester,14,Sênior,Realocar Carreira,Inteligência Artificial,30,3,"NLP,TensorFlow,Computer Vision",10,100.0
+QA Tester,20,Sênior,Atualizar Carreira,Segurança da Informação,15,5,"Firewall,OWASP,SIEM,Criptografia,Pentest",8,100.0
+Gerente de Projetos,13,Sênior,Atualizar Carreira,DevOps,25,5,"Linux,CI/CD,Docker,Git,Kubernetes",10,100.0
+Analista de Sistemas,7,Sênior,Realocar Carreira,UX/UI Design,20,4,"Prototipagem,Adobe XD,Sketch,Figma",10,100.0
+Designer,15,Sênior,Realocar Carreira,UX/UI Design,30,5,"Prototipagem,Sketch,Design Thinking,Adobe XD,Figma",8,100.0
+QA Tester,3,Pleno,Atualizar Carreira,Desenvolvimento Web,20,4,"Java,React,Python,HTML",10,100.0
+Administrador de Redes,11,Sênior,Atualizar Carreira,Segurança da Informação,20,3,"Firewall,OWASP,Criptografia",9,100.0
+Suporte Técnico,17,Sênior,Realocar Carreira,Data Science,20,5,"Estatística,Python,NumPy,R,SQL",5,100.0
+Analista de Dados,8,Sênior,Atualizar Carreira,Cloud Computing,25,3,"AWS,Azure,Serverless",10,100.0
