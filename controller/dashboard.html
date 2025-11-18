@@ -225,9 +225,6 @@
                     Nosso sistema utiliza <strong>4 modelos de Machine Learning</strong> (Random Forest, Gradient Boosting e Linear Regression) 
                     para analisar seu perfil profissional e recomendar a melhor área de carreira, junto com cursos personalizados da Alura.
                 </p>
-                <p style="margin-top: 10px;">
-                    <strong>Modelos implementados:</strong> Classificação (prever área) + Regressão (calcular score de adequação)
-                </p>
             </div>
 
             <div id="alertContainer"></div>
@@ -329,10 +326,48 @@
             alertContainer.innerHTML = '';
             alertContainer.appendChild(alert);
 
-            // Auto-fechar após 5 segundos
+            // Auto-fechar após 8 segundos
             setTimeout(() => {
                 alert.classList.remove('active');
-            }, 5000);
+            }, 8000);
+        }
+
+        async function enviarComRetry(url, options, maxTentativas = 3) {
+            let ultimoErro;
+            
+            for (let tentativa = 1; tentativa <= maxTentativas; tentativa++) {
+                try {
+                    console.log(`Tentativa ${tentativa}/${maxTentativas}...`);
+                    
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 segundos timeout
+                    
+                    const response = await fetch(url, {
+                        ...options,
+                        signal: controller.signal
+                    });
+                    
+                    clearTimeout(timeoutId);
+                    
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        throw new Error(`Erro ${response.status}: ${errorText}`);
+                    }
+                    
+                    return await response.json();
+                    
+                } catch (error) {
+                    ultimoErro = error;
+                    console.error(`Tentativa ${tentativa} falhou:`, error);
+                    
+                    if (tentativa < maxTentativas) {
+                        console.log('Aguardando antes de tentar novamente...');
+                        await new Promise(resolve => setTimeout(resolve, 2000)); // Esperar 2 segundos
+                    }
+                }
+            }
+            
+            throw ultimoErro;
         }
 
         form.addEventListener('submit', async (e) => {
@@ -366,15 +401,13 @@
             form.style.display = 'none';
 
             try {
-                const response = await fetch('/analisar-perfil', {
+                const data = await enviarComRetry('/analisar-perfil', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(formData)
-                });
-
-                const data = await response.json();
+                }, 3);
 
                 if (data.success) {
                     console.log('✅ Análise concluída:', data);
@@ -402,9 +435,13 @@
                 
                 let mensagemErro = 'Erro ao analisar perfil: ' + error.message;
                 
-                // Verificar se é erro de modelos não treinados
-                if (error.message.includes('Modelos ML não encontrados')) {
-                    mensagemErro = '⚠️ Os modelos ML ainda não foram treinados. Execute o treinamento primeiro.';
+                // Mensagens mais amigáveis para erros comuns
+                if (error.name === 'AbortError') {
+                    mensagemErro = '⏱️ Tempo esgotado. O servidor pode estar reiniciando. Tente novamente em alguns segundos.';
+                } else if (error.message.includes('Failed to fetch')) {
+                    mensagemErro = '🔌 Erro de conexão. Verifique se o servidor está rodando e tente novamente.';
+                } else if (error.message.includes('Modelos ML não encontrados')) {
+                    mensagemErro = '⚠️ Os modelos ML ainda não foram treinados. Execute: python controller/treinar_via_api.py';
                 }
                 
                 mostrarAlerta(mensagemErro, 'error');
@@ -417,15 +454,19 @@
                 const response = await fetch('/status-modelos');
                 const status = await response.json();
                 
+                console.log('Status dos modelos:', status);
+                
                 if (!status.modelos_treinados) {
                     mostrarAlerta(
                         '⚠️ Atenção: Os modelos ML ainda não foram treinados. ' +
-                        'Para treinar, faça uma requisição POST para /treinar-modelos',
+                        'Execute: python controller/treinar_via_api.py',
                         'info'
                     );
+                } else {
+                    console.log(`✅ Modelos carregados: ${status.num_modelos_clf} classificação + ${status.num_modelos_reg} regressão`);
                 }
             } catch (error) {
-                console.log('Não foi possível verificar status dos modelos');
+                console.log('Não foi possível verificar status dos modelos:', error);
             }
         });
     </script>

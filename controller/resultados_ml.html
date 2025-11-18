@@ -237,28 +237,6 @@
             margin-top: 5px;
         }
 
-        .explicacao {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-
-        .explicacao h3 {
-            color: #856404;
-            margin-bottom: 10px;
-        }
-
-        .explicacao p {
-            color: #856404;
-            line-height: 1.6;
-        }
-
-        .cursos-recomendados {
-            margin-top: 30px;
-        }
-
         .curso-card {
             background: white;
             border: 2px solid #667eea;
@@ -309,16 +287,6 @@
             color: #155724;
         }
 
-        .badge-muito-bom {
-            background: #d1ecf1;
-            color: #0c5460;
-        }
-
-        .badge-bom {
-            background: #fff3cd;
-            color: #856404;
-        }
-
         .btn-voltar {
             background: #667eea;
             color: white;
@@ -336,22 +304,7 @@
             background: #764ba2;
         }
 
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8em;
-            }
-
-            .recomendacao-final .area {
-                font-size: 2em;
-            }
-
-            .models-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .loading {
-            display: none;
             text-align: center;
             padding: 50px;
         }
@@ -370,6 +323,15 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .erro-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #f5c6cb;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -377,87 +339,89 @@
         <div class="header">
             <h1>🎓 SkillBridge - Análise ML</h1>
             <p>Sistema Inteligente de Recomendação de Carreira</p>
-            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">
-                FIAP Global Solution 2025 - Futuro do Trabalho
-            </p>
         </div>
 
-        <!-- PERFIL DO USUÁRIO -->
-        <div class="section">
-            <h2 class="section-title">📋 Seu Perfil</h2>
-            <div class="perfil-grid" id="perfilGrid">
-                <!-- Preenchido via JavaScript -->
+        <div id="loadingDiv" class="section" style="display: none;">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Carregando resultados...</p>
             </div>
         </div>
 
-        <!-- RECOMENDAÇÃO FINAL -->
-        <div class="recomendacao-final" id="recomendacaoFinal">
-            <h2>🎯 Recomendação Final</h2>
-            <div class="area" id="areaFinal">-</div>
-            <div class="score" id="scoreFinal">Score: -</div>
-            <div class="nivel" id="nivelFinal">-</div>
-            <div style="margin-top: 20px;">
-                <span class="badge badge-excelente" id="consensoBadge">-</span>
+        <div id="erroDiv" class="section" style="display: none;">
+            <div class="erro-message">
+                <h3>❌ Nenhum resultado encontrado</h3>
+                <p>Por favor, volte e preencha o formulário.</p>
+                <br>
+                <a href="/" class="btn-voltar">← Voltar ao Formulário</a>
             </div>
         </div>
 
-        <!-- MODELOS DE CLASSIFICAÇÃO -->
-        <div class="section">
-            <h2 class="section-title">🎯 Modelos de Classificação (Área de Carreira)</h2>
-            <div class="models-grid" id="classificacaoGrid">
-                <!-- Preenchido via JavaScript -->
+        <div id="conteudoDiv" style="display: none;">
+            <!-- PERFIL DO USUÁRIO -->
+            <div class="section">
+                <h2 class="section-title">📋 Seu Perfil</h2>
+                <div class="perfil-grid" id="perfilGrid"></div>
             </div>
 
-            <div class="metricas-treinamento">
-                <h4>📊 Métricas de Treinamento (Classificação)</h4>
-                <div class="metricas-grid" id="metricasClf">
-                    <!-- Preenchido via JavaScript -->
+            <!-- RECOMENDAÇÃO FINAL -->
+            <div class="recomendacao-final">
+                <h2>🎯 Recomendação Final</h2>
+                <div class="area" id="areaFinal">-</div>
+                <div class="score" id="scoreFinal">Score: -</div>
+                <div class="nivel" id="nivelFinal">-</div>
+                <div style="margin-top: 20px;">
+                    <span class="badge badge-excelente" id="consensoBadge">-</span>
                 </div>
             </div>
-        </div>
 
-        <!-- MODELOS DE REGRESSÃO -->
-        <div class="section">
-            <h2 class="section-title">📈 Modelos de Regressão (Score de Adequação)</h2>
-            <div class="models-grid" id="regressaoGrid">
-                <!-- Preenchido via JavaScript -->
-            </div>
-
-            <div class="metricas-treinamento">
-                <h4>📊 Métricas de Treinamento (Regressão)</h4>
-                <div class="metricas-grid" id="metricasReg">
-                    <!-- Preenchido via JavaScript -->
+            <!-- MODELOS DE CLASSIFICAÇÃO -->
+            <div class="section">
+                <h2 class="section-title">🎯 Modelos de Classificação</h2>
+                <div class="models-grid" id="classificacaoGrid"></div>
+                <div class="metricas-treinamento">
+                    <h4>📊 Métricas de Treinamento</h4>
+                    <div class="metricas-grid" id="metricasClf"></div>
                 </div>
             </div>
-        </div>
 
-        <!-- EXPLICAÇÃO DOS MODELOS -->
-        <div class="section explicacao">
-            <h3>💡 Como Funciona?</h3>
-            <p><strong>Classificação:</strong> Utilizamos Random Forest e Gradient Boosting para prever qual área de carreira é mais adequada ao seu perfil. Estes modelos analisam suas características profissionais, experiência e objetivos para identificar o melhor caminho.</p>
-            <p style="margin-top: 15px;"><strong>Regressão:</strong> Random Forest Regressor e Linear Regression calculam um score de adequação (0-100), indicando o quão preparado você está para migrar para a área recomendada.</p>
-            <p style="margin-top: 15px;"><strong>Validação Cruzada:</strong> Todos os modelos foram validados com cross-validation (5-fold) para garantir resultados confiáveis e generalizáveis.</p>
-        </div>
-
-        <!-- CURSOS RECOMENDADOS -->
-        <div class="section" id="cursosSection">
-            <h2 class="section-title">📚 Cursos Recomendados da Alura</h2>
-            <div id="cursosLista">
-                <!-- Preenchido via JavaScript -->
+            <!-- MODELOS DE REGRESSÃO -->
+            <div class="section">
+                <h2 class="section-title">📈 Modelos de Regressão</h2>
+                <div class="models-grid" id="regressaoGrid"></div>
+                <div class="metricas-treinamento">
+                    <h4>📊 Métricas de Treinamento</h4>
+                    <div class="metricas-grid" id="metricasReg"></div>
+                </div>
             </div>
-        </div>
 
-        <!-- BOTÃO VOLTAR -->
-        <div style="text-align: center; margin: 30px 0;">
-            <a href="/" class="btn-voltar">← Voltar ao Formulário</a>
+            <!-- CURSOS RECOMENDADOS -->
+            <div class="section">
+                <h2 class="section-title">📚 Cursos Recomendados da Alura</h2>
+                <div id="cursosLista"></div>
+            </div>
+
+            <!-- BOTÃO VOLTAR -->
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="/" class="btn-voltar">← Voltar ao Formulário</a>
+            </div>
         </div>
     </div>
 
     <script>
-        // Dados vindos do servidor (injetados pelo Flask)
-        const dados = {{ dados|tojson|safe }};
-        
-        // Preencher perfil do usuário
+        // Carregar dados do localStorage
+        let dados = null;
+
+        try {
+            const dadosStr = localStorage.getItem('resultadosML');
+            if (dadosStr) {
+                dados = JSON.parse(dadosStr);
+                console.log('✅ Dados carregados:', dados);
+            }
+        } catch (e) {
+            console.error('Erro ao carregar dados:', e);
+        }
+
         function preencherPerfil() {
             const perfil = dados.perfil;
             const grid = document.getElementById('perfilGrid');
@@ -479,7 +443,6 @@
             `).join('');
         }
 
-        // Preencher recomendação final
         function preencherRecomendacaoFinal() {
             const rec = dados.predicoes.recomendacao_final;
             
@@ -487,10 +450,9 @@
             document.getElementById('scoreFinal').textContent = `Score: ${rec.score_adequacao.toFixed(2)}`;
             document.getElementById('nivelFinal').textContent = `Nível: ${rec.nivel_adequacao}`;
             document.getElementById('consensoBadge').textContent = 
-                `Consenso de ${rec.consenso_modelos}/${Object.keys(dados.predicoes.classificacao).length} modelos`;
+                `Consenso de ${rec.consenso_modelos} modelos`;
         }
 
-        // Preencher modelos de classificação
         function preencherClassificacao() {
             const modelos = dados.predicoes.classificacao;
             const grid = document.getElementById('classificacaoGrid');
@@ -529,7 +491,6 @@
             grid.innerHTML = html;
         }
 
-        // Preencher modelos de regressão
         function preencherRegressao() {
             const modelos = dados.predicoes.regressao;
             const grid = document.getElementById('regressaoGrid');
@@ -560,7 +521,6 @@
             grid.innerHTML = html;
         }
 
-        // Preencher métricas de treinamento
         function preencherMetricasTreinamento() {
             const resultados = dados.resultados_treinamento;
             
@@ -605,7 +565,6 @@
             regDiv.innerHTML = htmlReg;
         }
 
-        // Preencher cursos recomendados
         function preencherCursos() {
             const cursos = dados.cursos_recomendados;
             const lista = document.getElementById('cursosLista');
@@ -618,8 +577,7 @@
             lista.innerHTML = cursos.map(curso => `
                 <div class="curso-card">
                     <h4>${curso.titulo}</h4>
-                    <p><strong>Área:</strong> ${curso.area || 'Geral'}</p>
-                    <p>${curso.aprendizado || curso.descricao || 'Curso completo da Alura'}</p>
+                    <p>${curso.aprendizado || 'Curso completo da Alura'}</p>
                     <a href="${curso.url}" target="_blank" class="link">
                         Acessar Curso →
                     </a>
@@ -629,12 +587,24 @@
 
         // Inicializar página
         document.addEventListener('DOMContentLoaded', function() {
-            preencherPerfil();
-            preencherRecomendacaoFinal();
-            preencherClassificacao();
-            preencherRegressao();
-            preencherMetricasTreinamento();
-            preencherCursos();
+            if (!dados) {
+                document.getElementById('erroDiv').style.display = 'block';
+                return;
+            }
+
+            try {
+                document.getElementById('conteudoDiv').style.display = 'block';
+                preencherPerfil();
+                preencherRecomendacaoFinal();
+                preencherClassificacao();
+                preencherRegressao();
+                preencherMetricasTreinamento();
+                preencherCursos();
+            } catch (e) {
+                console.error('Erro ao preencher página:', e);
+                document.getElementById('erroDiv').style.display = 'block';
+                document.getElementById('conteudoDiv').style.display = 'none';
+            }
         });
     </script>
 </body>
