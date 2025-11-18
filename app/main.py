@@ -1,126 +1,229 @@
+"""
+Sistema SkillBridge - Recomendação de Carreira com Machine Learning
+FIAP Global Solution 2025 - Futuro do Trabalho
+
+Aplicação Flask reformulada para:
+✔ Enviar dados diretamente ao template resultados_ml.html
+✔ Remover endpoints obsoletos
+✔ Fluxo mais simples e funcional
+"""
+
 from flask import Flask, render_template, request, jsonify
 import json
 import os
 import sys
 from datetime import datetime
 
-# ✅ ADICIONAR O DIRETÓRIO SRC AO PATH
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'controller'))
+# -------------------------------------------------------------------
+# CONFIGURAÇÕES DE DIRETÓRIOS
+# -------------------------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CONTROLLER_DIR = os.path.join(BASE_DIR, 'controller')
+sys.path.insert(0, CONTROLLER_DIR)
 
-# ✅ AGORA OS IMPORTS FUNCIONAM
-from gpt_recommender import montar_input, recommender
-from save_pdf import salvar_pdf_organizado
+DATA_FOLDER = os.path.join(BASE_DIR, 'data')
+MODELS_FOLDER = os.path.join(BASE_DIR, 'models')
 
-app = Flask(__name__, template_folder='../controller')
+from ml_predictor import MLPredictor
 
-# Configurações
-DATA_FOLDER = os.path.join(os.path.dirname(__file__), '..', 'data')
 
+# -------------------------------------------------------------------
+# INICIALIZA FLASK
+# -------------------------------------------------------------------
+app = Flask(__name__, template_folder=CONTROLLER_DIR)
+
+predictor = None
+
+
+# -------------------------------------------------------------------
+# FUNÇÃO PARA CARREGAR PREDITOR
+# -------------------------------------------------------------------
+def carregar_preditor():
+    """Carrega os modelos ML caso existam"""
+    global predictor
+
+    if predictor is not None:
+        return
+
+    if not os.path.exists(MODELS_FOLDER):
+        print("⚠️ Modelos ainda não foram treinados.")
+        return
+
+    try:
+        predictor = MLPredictor()
+        print("✅ Preditor carregado com sucesso!")
+    except Exception as e:
+        print(f"❌ Erro ao carregar preditor: {e}")
+        predictor = None
+
+
+# -------------------------------------------------------------------
+# PAGINA PRINCIPAL
+# -------------------------------------------------------------------
 @app.route('/')
 def index():
-    """Renderiza a página principal com o formulário"""
     return render_template('dashboard.html')
 
-@app.route('/gerar-plano', methods=['POST'])
-def gerar_plano():
-    """Recebe os dados do formulário e gera o plano de carreira em PDF"""
+
+# -------------------------------------------------------------------
+# PROCESSAR FORMULÁRIO E RENDERIZAR RESULTADOS
+# -------------------------------------------------------------------
+@app.route('/analisar-perfil', methods=['POST'])
+def analisar_perfil():
     try:
-        # Receber dados do formulário
+        # Carregar preditor
+        if predictor is None:
+            carregar_preditor()
+
+        if predictor is None:
+            return render_template(
+                "resultados_ml.html",
+                dados={'erro': 'Modelos não foram treinados. Execute "Treinar Modelos".'}
+            )
+
+        # Obter dados do front-end
         formulario = request.json
-        
+
+        print("\n" + "="*70)
         print("📝 Dados recebidos do formulário:")
         print(json.dumps(formulario, indent=2, ensure_ascii=False))
-        
-        # Verificar se o arquivo de cursos existe
+        print("="*70)
+
+        # Predição
+        predicoes = predictor.prever(formulario)
+        resultados_treinamento = predictor.obter_resultados_treinamento()
+
+        area_recomendada = predicoes['recomendacao_final']['area_recomendada']
+        cursos_recomendados = obter_cursos_por_area(area_recomendada)
+
+        dados_resposta = {
+            'perfil': {
+                'profissao_atual': formulario.get('profissao_atual', '-'),
+                'anos_experiencia': formulario.get('anos_experiencia', 0),
+                'nivel_atual': determinar_nivel(int(formulario.get('anos_experiencia', 0))),
+                'objetivo_principal': formulario.get('objetivo_principal', '-'),
+                'tempo_disponivel_estudo': formulario.get('tempo_disponivel_estudo', '-'),
+                'num_habilidades': len(formulario.get('habilidades_atuais_hard', []))
+            },
+            'predicoes': predicoes,
+            'resultados_treinamento': resultados_treinamento,
+            'cursos_recomendados': cursos_recomendados[:10]
+        }
+
+        print(f"\n🎯 Área Recomendada: {area_recomendada}")
+        print(f"📊 Score: {predicoes['recomendacao_final']['score_adequacao']:.2f}")
+        print("="*70 + "\n")
+
+        # AQUI ESTÁ A CORREÇÃO PRINCIPAL:
+        return render_template("resultados_ml.html", dados=dados_resposta)
+
+    except Exception as e:
+        print(f"❌ Erro ao analisar perfil: {e}")
+        return render_template("resultados_ml.html", dados={'erro': str(e)})
+
+
+# -------------------------------------------------------------------
+# TREINAR MODELOS
+# -------------------------------------------------------------------
+@app.route('/treinar-modelos', methods=['POST'])
+def treinar_modelos():
+    try:
+        print("\n🚀 Iniciando treinamento dos modelos ML...\n")
+
+        from data_generator import DataGenerator
+        from ml_models import MLModels
+
+        generator = DataGenerator()
+        df = generator.gerar_dataset(n_amostras=1000)
+
+        os.makedirs(DATA_FOLDER, exist_ok=True)
+        dataset_path = os.path.join(DATA_FOLDER, 'dataset_profissionais.csv')
+        generator.salvar_dataset(df, dataset_path)
+
+        ml = MLModels(dataset_path)
+        ml.carregar_dados()
+        dados_proc = ml.preprocessar_dados()
+        ml.treinar_modelos_classificacao(dados_proc)
+        ml.treinar_modelos_regressao(dados_proc)
+
+        os.makedirs(MODELS_FOLDER, exist_ok=True)
+        ml.salvar_modelos(MODELS_FOLDER)
+
+        visual_dir = os.path.join(BASE_DIR, 'visualizations')
+        os.makedirs(visual_dir, exist_ok=True)
+        ml.gerar_visualizacoes(visual_dir)
+
+        # Recarregar preditor
+        global predictor
+        predictor = None
+        carregar_preditor()
+
+        print("✅ Treinamento concluído!")
+        return jsonify({'success': True, 'message': 'Modelos treinados com sucesso!'})
+
+    except Exception as e:
+        print(f"❌ Erro ao treinar modelos: {e}")
+        return jsonify({'success': False, 'message': str(e)})
+
+
+# -------------------------------------------------------------------
+# FILTRAR CURSOS
+# -------------------------------------------------------------------
+def obter_cursos_por_area(area):
+    try:
         cursos_path = os.path.join(DATA_FOLDER, 'cursos_alura.json')
+
         if not os.path.exists(cursos_path):
-            return jsonify({
-                'success': False,
-                'message': 'Arquivo de cursos não encontrado. Execute primeiro o scraper.'
-            }), 400
-        
-        # Montar input para o recomendador
-        input_data = montar_input(formulario)
-        
-        print("\n🤖 Gerando recomendações com IA...")
-        
-        # Gerar recomendações
-        texto_plano = recommender(input_data)
-        
-        print("\n📄 Gerando PDF...")
-        
-        # Gerar nome do arquivo com timestamp
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        profissao = formulario.get('profissao_atual', 'Profissional').replace(' ', '_')
-        nome_arquivo = f"Plano_Carreira_{profissao}_{timestamp}.pdf"
-        
-        # Salvar PDF
-        caminho_pdf = salvar_pdf_organizado(texto_plano, nome_arquivo)
-        
-        return jsonify({
-            'success': True,
-            'message': 'Plano de carreira gerado com sucesso!',
-            'arquivo': nome_arquivo,
-            'caminho': caminho_pdf
-        })
-        
-    except Exception as e:
-        print(f"❌ Erro ao gerar plano: {str(e)}")
-        import traceback
-        traceback.print_exc()
-        return jsonify({
-            'success': False,
-            'message': f'Erro ao gerar plano: {str(e)}'
-        }), 500
+            return []
 
-@app.route('/cursos-disponiveis')
-def cursos_disponiveis():
-    """Retorna a lista de cursos disponíveis"""
-    try:
-        cursos_path = os.path.join(DATA_FOLDER, 'cursos_alura.json')
         with open(cursos_path, 'r', encoding='utf-8') as f:
-            cursos = json.load(f)
-        return jsonify({'success': True, 'cursos': cursos, 'total': len(cursos)})
-    except FileNotFoundError:
-        return jsonify({
-            'success': False,
-            'message': 'Arquivo de cursos não encontrado. Execute o scraper primeiro.'
-        }), 404
-    except Exception as e:
-        return jsonify({'success': False, 'message': str(e)}), 500
+            todos_cursos = json.load(f)
 
-@app.route('/executar-scraper', methods=['POST'])
-def executar_scraper():
-    """Executa o scraper para coletar cursos da Alura"""
-    try:
-        # Importar o scraper
-        scraper_path = os.path.join(os.path.dirname(__file__), '..', 'src')
-        sys.path.insert(0, scraper_path)
-        import alura_scraper
-        
-        print("🔍 Iniciando scraper da Alura...")
-        alura_scraper.extrair_todos_detalhes()
-        
-        return jsonify({
-            'success': True,
-            'message': 'Cursos coletados com sucesso!'
-        })
-        
-    except Exception as e:
-        print(f"❌ Erro ao executar scraper: {str(e)}")
-        import traceback
-        traceback.print_exc()
-        return jsonify({
-            'success': False,
-            'message': f'Erro ao executar scraper: {str(e)}'
-        }), 500
+        keywords_por_area = {
+            'Desenvolvimento Web': ['web', 'html', 'css', 'javascript', 'react'],
+            'Data Science': ['data', 'dados', 'python', 'machine learning'],
+            'DevOps': ['devops', 'docker', 'kubernetes'],
+            'Mobile': ['mobile', 'android', 'ios'],
+            'UX/UI Design': ['ux', 'ui', 'design', 'figma'],
+            'Segurança da Informação': ['segurança', 'security'],
+            'Cloud Computing': ['cloud', 'aws', 'azure'],
+            'Inteligência Artificial': ['ia', 'ai', 'deep learning']
+        }
 
+        keywords = keywords_por_area.get(area, [])
+
+        cursos_filtrados = []
+        for curso in todos_cursos:
+            texto = f"{curso.get('titulo', '')} {curso.get('aprendizado', '')} {curso.get('publico_alvo', '')}".lower()
+            if any(kw in texto for kw in keywords):
+                curso['area'] = area
+                cursos_filtrados.append(curso)
+
+        return cursos_filtrados
+
+    except:
+        return []
+
+
+# -------------------------------------------------------------------
+# DETERMINAR NÍVEL COM BASE NA EXPERIÊNCIA
+# -------------------------------------------------------------------
+def determinar_nivel(anos_exp):
+    if anos_exp < 3:
+        return 'Júnior'
+    elif anos_exp < 7:
+        return 'Pleno'
+    return 'Sênior'
+
+
+# -------------------------------------------------------------------
+# RUN
+# -------------------------------------------------------------------
 if __name__ == '__main__':
-    print("Iniciando Sistema de Recomendação de Carreira - Alura")
-    print("=" * 60)
-    print("📱 Acesse: http://localhost:5000")
-    print("=" * 60)
-    print(f"📂 Pasta src: {os.path.join(os.path.dirname(__file__), '..', 'src')}")
-    print(f"📂 Pasta data: {DATA_FOLDER}")
-    print("=" * 60)
+    carregar_preditor()
+
+    print("\n🎓 SKILLBRIDGE iniciado!")
+    print("Acesse: http://localhost:5000")
+    print("="*70)
+
     app.run(debug=True, host='0.0.0.0', port=5000)

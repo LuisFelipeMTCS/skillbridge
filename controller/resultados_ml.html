@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados ML - SkillBridge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .perfil-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .perfil-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .perfil-item strong {
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .perfil-item span {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .recomendacao-final {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .recomendacao-final h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .recomendacao-final .area {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .recomendacao-final .score {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .recomendacao-final .nivel {
+            font-size: 1.5em;
+            opacity: 0.9;
+        }
+
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .model-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 5px solid #667eea;
+        }
+
+        .model-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-name {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .metric-value {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .score-bar {
+            background: #e0e0e0;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .score-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 1s ease-in-out;
+        }
+
+        .top-areas {
+            margin-top: 15px;
+        }
+
+        .area-item {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #667eea;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .area-item .area-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .area-item .area-prob {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .metricas-treinamento {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .metricas-treinamento h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .metricas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .metrica-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metrica-box .valor {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .metrica-box .nome {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .explicacao {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .explicacao h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .explicacao p {
+            color: #856404;
+            line-height: 1.6;
+        }
+
+        .cursos-recomendados {
+            margin-top: 30px;
+        }
+
+        .curso-card {
+            background: white;
+            border: 2px solid #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .curso-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .curso-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .curso-card p {
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .curso-card .link {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .curso-card .link:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 5px;
+        }
+
+        .badge-excelente {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .badge-muito-bom {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .badge-bom {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .btn-voltar {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        .btn-voltar:hover {
+            background: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .recomendacao-final .area {
+                font-size: 2em;
+            }
+
+            .models-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #667eea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 SkillBridge - Análise ML</h1>
+            <p>Sistema Inteligente de Recomendação de Carreira</p>
+            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">
+                FIAP Global Solution 2025 - Futuro do Trabalho
+            </p>
+        </div>
+
+        <!-- PERFIL DO USUÁRIO -->
+        <div class="section">
+            <h2 class="section-title">📋 Seu Perfil</h2>
+            <div class="perfil-grid" id="perfilGrid">
+                <!-- Preenchido via JavaScript -->
+            </div>
+        </div>
+
+        <!-- RECOMENDAÇÃO FINAL -->
+        <div class="recomendacao-final" id="recomendacaoFinal">
+            <h2>🎯 Recomendação Final</h2>
+            <div class="area" id="areaFinal">-</div>
+            <div class="score" id="scoreFinal">Score: -</div>
+            <div class="nivel" id="nivelFinal">-</div>
+            <div style="margin-top: 20px;">
+                <span class="badge badge-excelente" id="consensoBadge">-</span>
+            </div>
+        </div>
+
+        <!-- MODELOS DE CLASSIFICAÇÃO -->
+        <div class="section">
+            <h2 class="section-title">🎯 Modelos de Classificação (Área de Carreira)</h2>
+            <div class="models-grid" id="classificacaoGrid">
+                <!-- Preenchido via JavaScript -->
+            </div>
+
+            <div class="metricas-treinamento">
+                <h4>📊 Métricas de Treinamento (Classificação)</h4>
+                <div class="metricas-grid" id="metricasClf">
+                    <!-- Preenchido via JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- MODELOS DE REGRESSÃO -->
+        <div class="section">
+            <h2 class="section-title">📈 Modelos de Regressão (Score de Adequação)</h2>
+            <div class="models-grid" id="regressaoGrid">
+                <!-- Preenchido via JavaScript -->
+            </div>
+
+            <div class="metricas-treinamento">
+                <h4>📊 Métricas de Treinamento (Regressão)</h4>
+                <div class="metricas-grid" id="metricasReg">
+                    <!-- Preenchido via JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPLICAÇÃO DOS MODELOS -->
+        <div class="section explicacao">
+            <h3>💡 Como Funciona?</h3>
+            <p><strong>Classificação:</strong> Utilizamos Random Forest e Gradient Boosting para prever qual área de carreira é mais adequada ao seu perfil. Estes modelos analisam suas características profissionais, experiência e objetivos para identificar o melhor caminho.</p>
+            <p style="margin-top: 15px;"><strong>Regressão:</strong> Random Forest Regressor e Linear Regression calculam um score de adequação (0-100), indicando o quão preparado você está para migrar para a área recomendada.</p>
+            <p style="margin-top: 15px;"><strong>Validação Cruzada:</strong> Todos os modelos foram validados com cross-validation (5-fold) para garantir resultados confiáveis e generalizáveis.</p>
+        </div>
+
+        <!-- CURSOS RECOMENDADOS -->
+        <div class="section" id="cursosSection">
+            <h2 class="section-title">📚 Cursos Recomendados da Alura</h2>
+            <div id="cursosLista">
+                <!-- Preenchido via JavaScript -->
+            </div>
+        </div>
+
+        <!-- BOTÃO VOLTAR -->
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="/" class="btn-voltar">← Voltar ao Formulário</a>
+        </div>
+    </div>
+
+    <script>
+        // Dados vindos do servidor (injetados pelo Flask)
+        const dados = {{ dados|tojson|safe }};
+        
+        // Preencher perfil do usuário
+        function preencherPerfil() {
+            const perfil = dados.perfil;
+            const grid = document.getElementById('perfilGrid');
+            
+            const items = [
+                { label: 'Profissão Atual', value: perfil.profissao_atual },
+                { label: 'Anos de Experiência', value: perfil.anos_experiencia },
+                { label: 'Nível', value: perfil.nivel_atual },
+                { label: 'Objetivo', value: perfil.objetivo_principal },
+                { label: 'Tempo de Estudo', value: perfil.tempo_disponivel_estudo },
+                { label: 'Habilidades', value: perfil.num_habilidades }
+            ];
+            
+            grid.innerHTML = items.map(item => `
+                <div class="perfil-item">
+                    <strong>${item.label}</strong>
+                    <span>${item.value}</span>
+                </div>
+            `).join('');
+        }
+
+        // Preencher recomendação final
+        function preencherRecomendacaoFinal() {
+            const rec = dados.predicoes.recomendacao_final;
+            
+            document.getElementById('areaFinal').textContent = rec.area_recomendada;
+            document.getElementById('scoreFinal').textContent = `Score: ${rec.score_adequacao.toFixed(2)}`;
+            document.getElementById('nivelFinal').textContent = `Nível: ${rec.nivel_adequacao}`;
+            document.getElementById('consensoBadge').textContent = 
+                `Consenso de ${rec.consenso_modelos}/${Object.keys(dados.predicoes.classificacao).length} modelos`;
+        }
+
+        // Preencher modelos de classificação
+        function preencherClassificacao() {
+            const modelos = dados.predicoes.classificacao;
+            const grid = document.getElementById('classificacaoGrid');
+            
+            let html = '';
+            for (const [nome, resultado] of Object.entries(modelos)) {
+                const confianca = (resultado.confianca * 100).toFixed(1);
+                
+                html += `
+                    <div class="model-card">
+                        <h3>${nome}</h3>
+                        <div class="metric">
+                            <span class="metric-name">Área Prevista:</span>
+                            <span class="metric-value">${resultado.area_prevista}</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Confiança:</span>
+                            <span class="metric-value">${confianca}%</span>
+                        </div>
+                        <div class="score-bar">
+                            <div class="score-fill" style="width: ${confianca}%">${confianca}%</div>
+                        </div>
+                        <div class="top-areas">
+                            <strong>Top 3 Áreas:</strong>
+                            ${resultado.top_3_areas.map((area, idx) => `
+                                <div class="area-item">
+                                    <span class="area-name">${idx + 1}. ${area.area}</span>
+                                    <span class="area-prob">${area.percentual}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            grid.innerHTML = html;
+        }
+
+        // Preencher modelos de regressão
+        function preencherRegressao() {
+            const modelos = dados.predicoes.regressao;
+            const grid = document.getElementById('regressaoGrid');
+            
+            let html = '';
+            for (const [nome, resultado] of Object.entries(modelos)) {
+                const score = resultado.score_adequacao.toFixed(2);
+                const scorePerc = Math.min(100, Math.max(0, resultado.score_adequacao));
+                
+                html += `
+                    <div class="model-card">
+                        <h3>${nome}</h3>
+                        <div class="metric">
+                            <span class="metric-name">Score Previsto:</span>
+                            <span class="metric-value">${score}</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Nível de Adequação:</span>
+                            <span class="metric-value">${resultado.nivel_adequacao}</span>
+                        </div>
+                        <div class="score-bar">
+                            <div class="score-fill" style="width: ${scorePerc}%">${score}</div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            grid.innerHTML = html;
+        }
+
+        // Preencher métricas de treinamento
+        function preencherMetricasTreinamento() {
+            const resultados = dados.resultados_treinamento;
+            
+            // Classificação
+            const clfDiv = document.getElementById('metricasClf');
+            const modelsClf = Object.keys(resultados.classificacao).filter(k => k !== 'feature_importance');
+            
+            let htmlClf = '';
+            modelsClf.forEach(model => {
+                const metrics = resultados.classificacao[model];
+                htmlClf += `
+                    <div class="metrica-box">
+                        <div class="valor">${(metrics.accuracy * 100).toFixed(1)}%</div>
+                        <div class="nome">${model}<br>Accuracy</div>
+                    </div>
+                    <div class="metrica-box">
+                        <div class="valor">${(metrics.f1_score * 100).toFixed(1)}%</div>
+                        <div class="nome">${model}<br>F1-Score</div>
+                    </div>
+                `;
+            });
+            clfDiv.innerHTML = htmlClf;
+            
+            // Regressão
+            const regDiv = document.getElementById('metricasReg');
+            const modelsReg = Object.keys(resultados.regressao);
+            
+            let htmlReg = '';
+            modelsReg.forEach(model => {
+                const metrics = resultados.regressao[model];
+                htmlReg += `
+                    <div class="metrica-box">
+                        <div class="valor">${metrics.rmse.toFixed(2)}</div>
+                        <div class="nome">${model}<br>RMSE</div>
+                    </div>
+                    <div class="metrica-box">
+                        <div class="valor">${(metrics.r2_score * 100).toFixed(1)}%</div>
+                        <div class="nome">${model}<br>R² Score</div>
+                    </div>
+                `;
+            });
+            regDiv.innerHTML = htmlReg;
+        }
+
+        // Preencher cursos recomendados
+        function preencherCursos() {
+            const cursos = dados.cursos_recomendados;
+            const lista = document.getElementById('cursosLista');
+            
+            if (!cursos || cursos.length === 0) {
+                lista.innerHTML = '<p>Nenhum curso encontrado no momento.</p>';
+                return;
+            }
+            
+            lista.innerHTML = cursos.map(curso => `
+                <div class="curso-card">
+                    <h4>${curso.titulo}</h4>
+                    <p><strong>Área:</strong> ${curso.area || 'Geral'}</p>
+                    <p>${curso.aprendizado || curso.descricao || 'Curso completo da Alura'}</p>
+                    <a href="${curso.url}" target="_blank" class="link">
+                        Acessar Curso →
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        // Inicializar página
+        document.addEventListener('DOMContentLoaded', function() {
+            preencherPerfil();
+            preencherRecomendacaoFinal();
+            preencherClassificacao();
+            preencherRegressao();
+            preencherMetricasTreinamento();
+            preencherCursos();
+        });
+    </script>
+</body>
+</html>
